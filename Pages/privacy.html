@@ -11,7 +11,7 @@
     <link rel="stylesheet" media='screen and (min-width: 481px)' href="../Styles/largescreen.css">
     <link rel="stylesheet" href="../Styles/fonts.css">
  </head>
- <body>
+ <body onresize="hidePhoneMenu()">
     <nav id="nav">
         <!-- Only displays when largescreen.css active -->
         <div id="reg-menu">
@@ -31,7 +31,7 @@
             </ul>
         </div> 
         <!-- Only displays when phone.css active -->
-        <div id="ham-menu">
+        <div id="ham-menu" onclick=togglePhoneMenu()>
             <img id="menu-icon" src="../Images/Menu.png" alt="Menu icon">
         </div>
         <div id="title">
@@ -42,6 +42,22 @@
             </a>
         </div>    
     </nav>
+    <nav id="phone-menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="./Pages/about.html">About</a>
+            </li>
+            <li>
+                <a href="./Pages/calculators.html">Calculators</a>
+            </li>
+            <li>
+                <a href="https://www.patreon.com/">Donate</a>
+            </li>
+        </ul>
+    </nav>  
     <main>
         <div id="content-wrapper">
             <section id="content-privacy">

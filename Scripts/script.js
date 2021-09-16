@@ -20,28 +20,18 @@ function createShapeCard(shape) {
                             </div>`;
 }
 
+//Function to toggle phone menu display when clicking menu icon
+function togglePhoneMenu() {
+    var menu = document.getElementById("phone-menu");
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  }
 
-
-if (true && true) {
-    console.log('true');
-} else {
-    console.log('false');
-}
-
-if (false && false) {
-    console.log('true');
-} else {
-    console.log('false');
-}
-
-if (true && false) {
-    console.log('true');
-} else {
-    console.log('false');
-}
-
-if (false && true) {
-    console.log('true');
-} else {
-    console.log('false');
-}
+//Hide phone menu on screen resize
+function hidePhoneMenu(){
+var menu = document.getElementById("phone-menu");
+menu.style.display = "none";
+};
