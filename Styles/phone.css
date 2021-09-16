@@ -1,3 +1,25 @@
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #66FCF1 transparent;
+  overflow-x: hidden;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #66FCF1;
+}
+
 #nav {
   background-color: transparent;
   display: -webkit-box;
@@ -93,9 +115,75 @@
   -webkit-text-stroke-color: #171717;
 }
 
+#phone-menu {
+  position: absolute;
+  height: 79vh;
+  width: 98vw;
+  background-color: black;
+  margin: 0 1vw 1vh 1vw;
+  z-index: 2;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #66FCF1;
+  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+  display: none;
+}
+
+#phone-menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#phone-menu ul li {
+  color: #66FCF1;
+  font-family: no-continue;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#phone-menu ul li a {
+  color: #66FCF1;
+  font-size: 19px;
+  text-decoration: none;
+  font-family: no-continue;
+}
+
+#phone-menu ul li a:visited {
+  color: #66FCF1;
+  font-size: 19px;
+  text-decoration: none;
+}
+
 #content-wrapper {
   background-color: transparent;
   height: 79vh;
+  width: 98vw;
   margin: 0 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +203,7 @@
 #content-wrapper #calc-area {
   background-color: transparent;
   height: 38vh;
-  width: 98vw;
+  width: 96vw;
   border-width: 2px;
   border-style: solid;
   border-color: #66FCF1;
@@ -126,7 +214,7 @@
 #content-wrapper #shape-list {
   background-color: transparent;
   height: 40vh;
-  width: 98vw;
+  width: 96vw;
   border-width: 2px;
   border-style: solid;
   border-color: #66FCF1;
@@ -148,6 +236,7 @@
           align-items: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 #content-wrapper .shape-card {
@@ -178,6 +267,7 @@
 #content-wrapper .shape-card h3 {
   font-family: no-continue;
   color: #66FCF1;
+  font-size: 13px;
 }
 
 footer {
