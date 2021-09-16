@@ -1,0 +1,134 @@
+$neon-blue: #66FCF1;
+$white: #EFEFEF; //Slighty offset white for OLED screens
+$black: #171717; //Slightly offset black for OLED screens
+$no-continue: no-continue; //Font stack
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  p {
+    color: $neon-blue;
+    font-size: 14px; 
+  }
+  
+  a {
+    color: $neon-blue;
+  }
+  
+  a:visited {
+    color: #45A29E;
+  }  
+}
+
+body, html {
+  min-height: 100%;
+  height: 100vh;
+}
+
+body {
+  background-image: url("../Images/Wallpaper.jpg");
+  background-size: cover;
+  background-color: $black;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+#content-privacy {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 20px 15vw 20px 15vw;
+  text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $neon-blue;
+  box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+  p {
+    margin-top: 10px;
+  }
+  h4 {
+    font-size: 15px;
+    color: $neon-blue;
+    margin-top: 15px;
+  }
+}
+
+#content-calc {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 20px 15vw 20px 15vw;
+  text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $neon-blue;
+  box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+  
+  h1 {
+    font-family: $no-continue;
+    font-size: 7.5vh;
+    color: transparent;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: $neon-blue;
+  }
+
+  h1:hover { 
+    text-shadow:  0 0 1px $neon-blue, 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px #66FCF1, 
+                  0 0 5px $neon-blue,  0 0 6px $neon-blue,  0 0 7px $neon-blue;
+    transition: all 0.3s;
+    -webkit-text-stroke-color: $black;
+  }
+}
+
+#content-about {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 20px 15vw 20px 15vw;
+  text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $neon-blue;
+  box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+
+  aside {
+    img {
+      height: 175px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 15px;
+      color: $neon-blue;
+    }
+  }
+
+  section {
+    text-align: left;
+    margin-top: 10px;
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+

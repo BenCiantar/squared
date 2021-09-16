@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta name="description" content="Calculate the area and perimeter for a huge variety of shapes online.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Squared | Online Shape Calculator</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" media='screen and (max-width: 481px)' href="./Styles/phone.css">
+    <link rel="stylesheet" media='screen and (min-width: 481px)' href="./Styles/largescreen.css">
+    <link rel="stylesheet" href="./Styles/fonts.css">
+ </head>
+ <body onload="getShapeData()">
+    <nav id="nav">
+        <!-- Only displays when largescreen.css active -->
+        <nav id="reg-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./Pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="./Pages/calculators.html">Calculators</a>
+                </li>
+                <li>
+                    <a href="https://www.patreon.com/">Donate</a>
+                </li>
+            </ul>
+        </nav> 
+        <!-- Only displays when phone.css active -->
+        <div id="ham-menu">
+            <img id="menu-icon" src="./Images/Menu.png" alt="Menu Icon">
+        </div>
+        <div id="title">
+            <a href="index.html">
+                <h1>
+                    SQUARED
+                </h1>
+            </a>
+        </div>    
+    </nav>
+    <main>
+        <div id="content-wrapper">
+            <section id="calc-area">
+            </section>
+            <section id="shape-list">
+            </section>
+        </div>
+    </main>
+    <footer>
+    <div id="copyright">
+        Benjamin Ciantar 2021 ©
+    </div>
+    <div id="social-media">
+        <ul>
+            <li class="social-icon">
+                <a href="https://www.facebook.com/benbens155"><img class="social-logo-image" src="./Images/Facebook Logo.png" alt="Facebook logo"></a>
+            </li>
+            <li class="social-icon">
+                <a href="https://www.instagram.com/benjamoose_155/"><img class="social-logo-image" src="./Images/Instagram Logo.png" alt="Instagram logo"></a>
+            </li>
+            <li class="social-icon">
+                <a href="https://twitter.com/benjamoose155"><img class="social-logo-image" src="./Images/Twitter Logo.png" alt="Twitter logo"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="privacy">
+        <a href="./Pages/privacy.html" alt="privacy">Privacy Policy & Cookies</a>
+    </div>
+  </footer>
+  <script src="./Scripts/script.js"></script>
+ </body>
+</html>

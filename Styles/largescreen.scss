@@ -1,0 +1,236 @@
+// Styling for devices with 481px+ screen width
+$neon-blue: #66FCF1;
+$white: #EFEFEF; //Slighty offset white for OLED screens
+$black: #171717; //Slightly offset black for OLED screens
+$no-continue: no-continue; //Font stack
+
+
+//Scrollbar formatting
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $neon-blue transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid $neon-blue;
+}
+
+// Header
+
+#nav {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: centre;
+  height: 13vh;
+  width: 98vw;
+  margin: 0 1vw;
+  padding: 3px;
+  #reg-menu {
+    background-color: transparent;
+    padding: 2px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: flext-start;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flext-start;
+      align-items: center;
+      list-style-type: none;
+      padding-left: 5px;
+      li {
+        margin-right: 2vw;
+      }
+      a {
+        color: $neon-blue;
+        font-size: 19px;
+        text-decoration: none;
+        font-family: $no-continue;
+      }
+      a:hover {
+        text-shadow: 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 0 0 5px $neon-blue;
+        transition: all 0.3s;
+        color: $black;
+      }
+      a:visited {
+        color: $neon-blue;  
+        font-size: 19px;
+        text-decoration: none;
+      }
+      a:visited:hover {
+        text-shadow: 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 0 0 5px $neon-blue;
+        transition: all 0.3s;
+        color: $black;
+      }
+    }
+  }
+  #ham-menu {
+    display: none;
+    img {
+      height: 100%;
+    }
+  }
+  #title {
+    background-color: transparent;
+    padding: 2px;
+    overflow: show;
+    padding-right:1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 38vw;
+    height: 100%;
+    a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    h1 {
+      font-family: $no-continue;
+      font-size: 7.5vh;
+      color: transparent;
+      -webkit-text-stroke-width: 0.2px;
+      -webkit-text-stroke-color: $neon-blue;
+    }
+    h1:hover { 
+      text-shadow:  0 0 1px $neon-blue, 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 
+                    0 0 5px $neon-blue,  0 0 6px $neon-blue,  0 0 7px $neon-blue;
+      transition: all 0.3s;
+      -webkit-text-stroke-color: $black;
+    }
+  }
+}
+
+// Content
+#content-wrapper {
+  background-color: transparent;
+  height: 75vh;
+  margin: 0vh 1vw 0vh 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  #calc-area {
+    background-color: transparent;
+    height: 75vh;
+    width: 37vw;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $neon-blue;
+    box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+  }
+  #shape-list {
+    background-color: transparent;
+    height: 75vh;
+    width: 60vw;
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $neon-blue;
+    box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  .shape-card {
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    img {
+      height: 150px;
+      width: 150px;
+    }
+    h3 {
+      font-family: $no-continue;
+      color: $neon-blue;
+    }
+  }
+}
+
+//Footer
+footer {
+  background-color: transparent;
+  height: 10vh;
+  margin: 0 1vw;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  overflow: hidden;
+  #copyright {
+    background-color: transparent;
+    color: $neon-blue;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-end;
+  }
+  #social-media {
+    background-color: transparent;
+    height: 100%;
+    width: 20%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    ul {
+      background-color: transparent;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 3vh;
+      li a img {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+  #privacy {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: flex-end;
+  }  
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "shapeName": "Square",
+        "cardImage": "../Images/shapes/square.png",
+        "calcImage": "../Images/shapes/square.png"
+    },
+    {
+        "shapeName": "Circle",
+        "cardImage": "../Images/shapes/circle.png",
+        "calcImage": "../Images/shapes/circle.png"
+      },
+      {
+        "shapeName": "Octagon",
+        "cardImage": "../Images/shapes/octagon.png",
+        "calcImage": "../Images/shapes/octagon.png"
+      },
+      {
+        "shapeName": "Triangle",
+        "cardImage": "../Images/shapes/triangle.png",
+        "calcImage": "../Images/shapes/triangle.png"
+      },
+      {
+        "shapeName": "Hexagon",
+        "cardImage": "../Images/shapes/hexagon.png",
+        "calcImage": "../Images/shapes/hexagon.png"
+      },
+      {
+        "shapeName": "Octagon",
+        "cardImage": "../Images/shapes/octagon.png",
+        "calcImage": "../Images/shapes/octagon.png"
+      },
+      {
+        "shapeName": "Pentagon",
+        "cardImage": "../Images/shapes/pentagon.png",
+        "calcImage": "../Images/shapes/pentagon.png"
+      },
+      {
+        "shapeName": "Heptagon",
+        "cardImage": "../Images/shapes/heptagon.png",
+        "calcImage": "../Images/shapes/heptagon.png"
+      },
+      {
+        "shapeName": "Nonagon",
+        "cardImage": "../Images/shapes/nonagon.png",
+        "calcImage": "../Images/shapes/nonagon.png"
+      },
+      {
+        "shapeName": "Parallelogram",
+        "cardImage": "../Images/shapes/parallelogram.png",
+        "calcImage": "../Images/shapes/parallelogram.png"
+      },
+      {
+        "shapeName": "Rhombus",
+        "cardImage": "../Images/shapes/rhombus.png",
+        "calcImage": "../Images/shapes/rhombus.png"
+      },
+      {
+        "shapeName": "Right Triangle",
+        "cardImage": "../Images/shapes/right-triangle.png",
+        "calcImage": "../Images/shapes/right-triangle.png"
+      },
+      {
+        "shapeName": "Scalene Triangle",
+        "cardImage": "../Images/shapes/scalene-triangle.png",
+        "calcImage": "../Images/shapes/scalene-triangle.png"
+      },
+      {
+        "shapeName": "Oval",
+        "cardImage": "../Images/shapes/oval.png",
+        "calcImage": "../Images/shapes/oval.png"
+      }
+]
