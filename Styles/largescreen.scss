@@ -132,6 +132,18 @@ $no-continue: no-continue; //Font stack
 }
 
 // Content
+h2 {
+    font-family: $no-continue;
+    color: $neon-blue;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: $no-continue;
+    color: $neon-blue;
+}
+
 #content-wrapper {
   background-color: transparent;
   height: 75vh;
@@ -150,6 +162,15 @@ $no-continue: no-continue; //Font stack
     border-style: solid;
     border-color: $neon-blue;
     box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+    color: $neon-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30%;
+      height: auto;
+    }
   }
   #shape-list {
     background-color: transparent;
@@ -177,16 +198,23 @@ $no-continue: no-continue; //Font stack
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 20px 0;
+    }
     img {
       height: 150px;
       width: 150px;
     }
     h3 {
       font-family: $no-continue;
-      color: $neon-blue;
     }
   }
-}
+  .shape-card:hover {
+    h3 {
+      color: $black;
+      text-shadow: 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 0 0 5px $neon-blue;
+      transition: all 0.3s;
+    }
+  }
+
 
 //Footer
 footer {

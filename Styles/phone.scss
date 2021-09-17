@@ -154,6 +154,15 @@ $no-continue: no-continue; //Font stack
     border-style: solid;
     border-color: $neon-blue;
     box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+    color: $neon-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 30%;
+      width: auto;
+    }
   }
   #shape-list {
     background-color: transparent;

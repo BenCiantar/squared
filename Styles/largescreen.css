@@ -177,6 +177,18 @@
   position: fixed;
 }
 
+h2 {
+  font-family: no-continue;
+  color: #66FCF1;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: no-continue;
+  color: #66FCF1;
+}
+
 #content-wrapper {
   background-color: transparent;
   height: 75vh;
@@ -207,6 +219,25 @@
   border-color: #66FCF1;
   -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
           box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+  color: #66FCF1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-wrapper #calc-area img {
+  width: 30%;
+  height: auto;
 }
 
 #content-wrapper #shape-list {
@@ -258,14 +289,20 @@
   padding: 20px 0 20px 0;
 }
 
-#content-wrapper .shape-card img {
+#content-wrapper img {
   height: 150px;
   width: 150px;
 }
 
-#content-wrapper .shape-card h3 {
+#content-wrapper h3 {
   font-family: no-continue;
-  color: #66FCF1;
+}
+
+.shape-card:hover h3 {
+  color: #171717;
+  text-shadow: 0 0 2px #66FCF1, 0 0 3px #66FCF1, 0 0 4px #66FCF1, 0 0 5px #66FCF1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 footer {
