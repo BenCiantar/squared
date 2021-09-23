@@ -149,6 +149,7 @@ h3 {
   height: 75vh;
   width: 98vw;
   margin: 0vh 1vw;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -156,7 +157,7 @@ h3 {
   #calc-area {
     background-color: transparent;
     height: 75vh;
-    width: 37vw;
+    width: 30vw;
     padding: 5px;
     border-width: 2px;
     border-style: solid;
@@ -171,7 +172,7 @@ h3 {
       text-align: center;
     }
     img {
-      width: 25%;
+      width: 35%;
       height: auto;
       margin: 0 0 2vh 0;
     }
@@ -179,7 +180,7 @@ h3 {
   #shape-list {
     background-color: transparent;
     height: 75vh;
-    width: 60vw;
+    width: 67vw;
     padding: 15px;
     border-width: 2px;
     border-style: solid;

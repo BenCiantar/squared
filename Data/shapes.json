@@ -5,7 +5,7 @@
     "cardImage": "../Images/shapes/square.png",
     "calcImage": "../Images/shapes/square.png",
     "formula" : "calculatorSquare()",
-    "form": "<form action=\"\" method=\"post\"><section class=\"inputContainer\"><p class=\"label\">Side A: </p> <input type=\"number\" id=\"n1\" value=\"10\" onblur=\"calculatorSquare()\"/></section><select name=\"unit1\" id=\"unit1\" onblur=\"calculatorSquare()\"><option value=\"cm\">cm</option><option value=\"mm\">mm</option><option value=\"m\">m</option><option value=\"km\">km</option></select>"              
+    "form": "<form action=\"\" method=\"post\"><section class=\"inputContainer\"><p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorSquare()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorSquare()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Rectangle",

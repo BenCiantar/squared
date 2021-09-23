@@ -47,16 +47,12 @@ Finish Javascript Codecademy
 
 Rewatch animation lecture recording
 
-Separated css files into folder for neatness
-
 
 
 
 
 Changelog----
-Added rectangle image
-Added main function to calculate shape area/perimeter
-Added a shapeCalcs.js file to house the formula for each shape
-Fixed alignment on calc-area heading
-Separated css files into their own folder for neatness
-Added margin to top and bottom of phone display to allow room for border glow effect to display properly
+
+
+Fixed About Me scrolling bug
+Fixed Privacy scrolling bug
