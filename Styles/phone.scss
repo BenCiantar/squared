@@ -137,6 +137,13 @@ $no-continue: no-continue; //Font stack
 }
 
 // Content
+h2 {
+  font-family: $no-continue;
+  color: $neon-blue;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
 #content-wrapper {
   background-color: transparent;
   height: 79vh;
@@ -148,8 +155,9 @@ $no-continue: no-continue; //Font stack
   align-items: center;
   #calc-area {
     background-color: transparent;
-    height: 38vh;
+    height: 37vh;
     width: 96vw;
+    margin: 1vh 0 0 0;
     border-width: 2px;
     border-style: solid;
     border-color: $neon-blue;
@@ -159,6 +167,9 @@ $no-continue: no-continue; //Font stack
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h2 {
+      text-align: center;
+    }
     img {
       height: 30%;
       width: auto;
@@ -166,7 +177,8 @@ $no-continue: no-continue; //Font stack
   }
   #shape-list {
     background-color: transparent;
-    height: 40vh;
+    height: 39vh;
+    margin: 0 0 1vh 0;
     width: 96vw;
     border-width: 2px;
     border-style: solid;

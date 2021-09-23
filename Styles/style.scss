@@ -11,11 +11,9 @@ $no-continue: no-continue; //Font stack
     color: $neon-blue;
     font-size: 14px; 
   }
-  
   a {
     color: $neon-blue;
   }
-  
   a:visited {
     color: #45A29E;
   }  
@@ -27,11 +25,9 @@ body, html {
 }
 
 body {
-  background-image: url("../Images/Wallpaper.jpg");
+  background-image: url("../../Images/Wallpaper.jpg");
   background-size: cover;
   background-color: $black;
-  font-family: arial, sans-serif;
-  font-size: 14px;
 }
 
 #content-privacy {
@@ -131,4 +127,91 @@ body {
   }
 }
 
+.output{
+  background-color: white;
+  border: 1px;
+  border-color: $neon-blue;
+  height: 20px;
+  width: 50px;
+}
 
+// Remove scroll arrows from number inputs
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form {
+  height: 50%;
+  width: 100%;
+  padding: 4vh 0 0 1vw;
+  background-color: red;
+}
+
+input {
+  height: 30px;
+  width: 20%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output {
+  height: 30px;
+  width: 20%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outputContainer {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+}
+.inputContainer {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+}
+
+.label {
+  width: 25%;
+  height: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+}
