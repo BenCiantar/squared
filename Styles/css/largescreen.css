@@ -235,9 +235,14 @@ h3 {
           align-items: center;
 }
 
+#content-wrapper #calc-area h2 {
+  text-align: center;
+}
+
 #content-wrapper #calc-area img {
-  width: 30%;
+  width: 25%;
   height: auto;
+  margin: 0 0 2vh 0;
 }
 
 #content-wrapper #shape-list {

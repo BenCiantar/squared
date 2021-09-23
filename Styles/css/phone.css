@@ -180,6 +180,13 @@
   text-decoration: none;
 }
 
+h2 {
+  font-family: no-continue;
+  color: #66FCF1;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
 #content-wrapper {
   background-color: transparent;
   height: 79vh;
@@ -202,8 +209,9 @@
 
 #content-wrapper #calc-area {
   background-color: transparent;
-  height: 38vh;
+  height: 37vh;
   width: 96vw;
+  margin: 1vh 0 0 0;
   border-width: 2px;
   border-style: solid;
   border-color: #66FCF1;
@@ -225,6 +233,10 @@
           align-items: center;
 }
 
+#content-wrapper #calc-area h2 {
+  text-align: center;
+}
+
 #content-wrapper #calc-area img {
   height: 30%;
   width: auto;
@@ -232,7 +244,8 @@
 
 #content-wrapper #shape-list {
   background-color: transparent;
-  height: 40vh;
+  height: 39vh;
+  margin: 0 0 1vh 0;
   width: 96vw;
   border-width: 2px;
   border-style: solid;

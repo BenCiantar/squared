@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Squared | Online Shape Calculator</title>
-    <link rel="stylesheet" href="./Styles/style.css">
-    <link rel="stylesheet" media='screen and (max-width: 481px)' href="./Styles/phone.css">
-    <link rel="stylesheet" media='screen and (min-width: 481px)' href="./Styles/largescreen.css">
-    <link rel="stylesheet" href="./Styles/fonts.css">
+    <link rel="stylesheet" href="./Styles/css/style.css">
+    <link rel="stylesheet" media='screen and (max-width: 481px)' href="./Styles/css/phone.css">
+    <link rel="stylesheet" media='screen and (min-width: 481px)' href="./Styles/css/largescreen.css">
+    <link rel="stylesheet" href="./Styles/css/fonts.css">
  </head>
  <body onload="getShapeData()" onresize="hidePhoneMenu()">
     <nav id="nav">
@@ -33,6 +33,7 @@
         <!-- Only displays when phone.css active -->
         <div id="ham-menu" onclick=togglePhoneMenu()>
             <img id="menu-icon" src="./Images/Menu.png" alt="Menu Icon">
+        
         </div>
         <div id="title">
             <a href="index.html">
@@ -88,6 +89,7 @@
         <a href="./Pages/privacy.html" alt="privacy">Privacy Policy & Cookies</a>
     </div>
   </footer>
-  <script src="./Scripts/script.js"></script>
+  <script src="../Scripts/script.js"></script>  
+  <script src="../Scripts/shapeCalcs.js"></script>
  </body>
 </html>

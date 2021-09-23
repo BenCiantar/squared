@@ -167,9 +167,13 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h2 {
+      text-align: center;
+    }
     img {
-      width: 30%;
+      width: 25%;
       height: auto;
+      margin: 0 0 2vh 0;
     }
   }
   #shape-list {
