@@ -4,12 +4,13 @@
 
 //SQUARE
 
-function calculatorSquare() {    
+function calculatorSquare() {  
+
     let n1 = parseInt(document.getElementById('n1').value, 10);
+    let num1 = n1;
 
     let unit1 = document.getElementById('unit1').value;
 
-    console.log(n1);
     //Convert input 1 to mm
     if (unit1 == "mm") {
         n1 = n1;
@@ -20,8 +21,6 @@ function calculatorSquare() {
     } else if (unit1 == "km") {
         n1 = n1 * 1000000;
     }
-
-    console.log(n1); //Returns 100 (mm)
 
     let outUnit1 = document.getElementById('outUnit1').value;
     
@@ -40,13 +39,11 @@ function calculatorSquare() {
     }
 
     let outUnit2 = document.getElementById('outUnit2').value;
-    console.log(outUnit2);
-    console.log(n1);
+
     //Convert from mm to desired output unit
     if (outUnit2 == "mm") {
         document.getElementById('area').innerHTML = n1 * n1;
     } else if (outUnit2 == "cm") {
-        console.log(n1);
         n1 = n1 / 10;
         document.getElementById('area').innerHTML = n1 * n1;
     } else if (outUnit2 == "m") {

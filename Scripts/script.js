@@ -14,7 +14,7 @@ let shapeArray = [];
             });
         }
 
-//Function to loop through the json data and create an html card for each shape
+//Loop through the json data and create an html card for each shape
 function createShapeCard(shape) {
     document.getElementById("shape-list").innerHTML += `
                                 <div class="shape-card" onclick=populateCalculator(${shape.id})>
@@ -24,22 +24,22 @@ function createShapeCard(shape) {
                                 `;
 }
 
-//Function to onclick populate calculator with data from corresponding shape object
+//Onclick populate calculator with data from corresponding shape object
 function populateCalculator (shapeId) {
     document.getElementById("calc-area").innerHTML = 
                           `
                           <img src="${shapeArray[shapeId].calcImage}" alt="Image of ${shapeArray[shapeId].shapeName}">
                           
-                          <p>${shapeArray[shapeId].shapeName}</p>
+                          <h4>${shapeArray[shapeId].shapeName}</h4>
 
                             ${shapeArray[shapeId].form}
                               <br>
                               <section class="outputContainer">
-                                <p class="label">Perimeter: </p> 
+                                <p class="label">Perim: </p> 
                                 <div class="output" id="perimeter"></div>
-                                <select name="outUnit1" id="outUnit1">
-                                  <option value="cm">cm</option>
-                                  <option value="mm">mm</option>
+                                <select name="outUnit1" id="outUnit1" class="select" onchange="${shapeArray[shapeId].formula}">
+                                <option value="mm">mm</option>
+                                <option value="cm" selected="selected">cm</option>
                                   <option value="m">m</option>
                                   <option value="km">km</option>
                                 </select>
@@ -47,11 +47,11 @@ function populateCalculator (shapeId) {
                               <section class="outputContainer">
                                 <p class="label">Area: </p> 
                                 <div class="output" id="area"></div>
-                                <select name="outUnit2" id="outUnit2" onblur="${shapeArray[shapeId].formula}">
-                                  <option value="cm">cm2</option>
-                                  <option value="mm">mm2</option>
-                                  <option value="m">m2</option>
-                                  <option value="km">km2</option>
+                                <select name="outUnit2" id="outUnit2" class="select" onchange="${shapeArray[shapeId].formula}">
+                                  <option value="mm">mm&sup2;</option>
+                                  <option value="cm" selected="selected">cm&sup2;</option>
+                                  <option value="m">m&sup2;</option>
+                                  <option value="km">km&sup2;</option>
                               </select>
                               </section>
                             </form>
@@ -59,7 +59,7 @@ function populateCalculator (shapeId) {
                           `
 }
 
-//Function to toggle phone menu display when clicking menu icon
+//Toggle phone menu display when clicking menu icon
 function togglePhoneMenu() {
   var menu = document.getElementById("phone-menu");
   if (menu.style.display === "none") {

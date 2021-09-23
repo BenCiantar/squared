@@ -35,13 +35,10 @@ body {
   height: 100%;
   width: 100%;
   padding: 20px 15vw 20px 15vw;
-  text-align: center;
-  overflow: scroll;
   overflow-x: hidden;
-  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flext-start;
   align-items: center;
   border-width: 2px;
   border-style: solid;
@@ -49,6 +46,7 @@ body {
   box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
   p {
     margin-top: 10px;
+    text-align: left;
   }
   h4 {
     font-size: 15px;
@@ -73,7 +71,6 @@ body {
   border-style: solid;
   border-color: $neon-blue;
   box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
-  
   h1 {
     font-family: $no-continue;
     font-size: 7.5vh;
@@ -81,7 +78,6 @@ body {
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: $neon-blue;
   }
-
   h1:hover { 
     text-shadow:  0 0 1px $neon-blue, 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px #66FCF1, 
                   0 0 5px $neon-blue,  0 0 6px $neon-blue,  0 0 7px $neon-blue;
@@ -90,49 +86,42 @@ body {
   }
 }
 
+h4 {
+  font-size: 15px;
+  color: $neon-blue;
+  font-family: $no-continue;
+  text-align: center;
+}
+
 #content-about {
   background-color: transparent;
   height: 100%;
   width: 100%;
   padding: 20px 15vw 20px 15vw;
   text-align: center;
-  overflow: scroll;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-width: 2px;
   border-style: solid;
   border-color: $neon-blue;
   box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
-
-  aside {
-    img {
-      height: 175px;
-      margin-bottom: 10px;
-    }
-    h4 {
-      font-size: 15px;
-      color: $neon-blue;
-    }
-  }
-
-  section {
-    text-align: left;
+  p {
     margin-top: 10px;
-    p {
-      margin-top: 10px;
+    text-align: left;
+    text-justify: inter-word;
+  }
+  section {
+    overflow: visible;
+    // height: auto;
+  img {
+    margin-top: 10px;
+    height: 20vh;
+    width: auto;
     }
   }
-}
-
-.output{
-  background-color: white;
-  border: 1px;
-  border-color: $neon-blue;
-  height: 20px;
-  width: 50px;
 }
 
 // Remove scroll arrows from number inputs
@@ -153,37 +142,7 @@ form {
   height: 50%;
   width: 100%;
   padding: 4vh 0 0 1vw;
-  background-color: red;
-}
-
-input {
-  height: 30px;
-  width: 20%;
-  background-color: $black;
-  color: $white;
-  border: 1px;
-  border-style: solid;
-  border-color: $neon-blue;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.output {
-  height: 30px;
-  width: 20%;
-  background-color: $black;
-  color: $white;
-  border: 1px;
-  border-style: solid;
-  border-color: $neon-blue;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  background-color: transparent;
 }
 
 .outputContainer {
@@ -191,27 +150,65 @@ input {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: transparent;
+  // flex-wrap: wrap;
 }
+
 .inputContainer {
   height: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background-color: transparent;
+  // flex-wrap: wrap;
+}
+
+input {
+  height: 30px;
+  width: 35%;
+  min-width: 30px;
+  margin-right: 2%;
+  font-family: arial;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 2%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+}
+
+.output {
+  height: 30px;
+  width: 35%;
+  min-width: 30px;
+  margin-right: 2%;
+  text-align: right;
+  padding-right: 2%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .label {
-  width: 25%;
+  width: 15%;
+  min-width: 40px;
   height: 30px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: teal;
+  color: $neon-blue;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.select {
+  width: 46px;
 }
