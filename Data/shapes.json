@@ -5,20 +5,27 @@
     "cardImage": "../Images/shapes/square.png",
     "calcImage": "../Images/shapes/square.png",
     "formula" : "calculatorSquare()",
-    "form": "<form action=\"\" method=\"post\"><section class=\"inputContainer\"><p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorSquare()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorSquare()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorSquare()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorSquare()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Rectangle",
     "id": 1,
     "cardImage": "../Images/shapes/rectangle.svg",
-    "calcImage": "../Images/shapes/rectangle.svg"
+    "calcImage": "../Images/shapes/rectangle.svg",
+    "formula" : "calculatorRectangle()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorRectangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorRectangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Side B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorRectangle()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorRectangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+
   },  
   {
     "shapeName": "Circle",
     "id": 2,
     "cardImage": "../Images/shapes/circle.png",
-    "calcImage": "../Images/shapes/circle.png"
+    "calcImage": "../Images/shapes/circle.png",
+    "formula" : "calculatorCircle()",
+    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
+  
+  
   {
     "shapeName": "Octagon",
     "id": 3,
@@ -26,7 +33,7 @@
     "calcImage": "../Images/shapes/octagon.png"
   },
   {
-    "shapeName": "Triangle",
+    "shapeName": "Equilateral Triangle",
     "id": 4,
     "cardImage": "../Images/shapes/triangle.png",
     "calcImage": "../Images/shapes/triangle.png"

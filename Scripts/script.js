@@ -26,12 +26,12 @@ function createShapeCard(shape) {
 
 //Onclick populate calculator with data from corresponding shape object
 function populateCalculator (shapeId) {
-    document.getElementById("calc-area").innerHTML = 
+    document.getElementById("form-area").innerHTML = 
                           `
-                          <img src="${shapeArray[shapeId].calcImage}" alt="Image of ${shapeArray[shapeId].shapeName}">
                           
                           <h4>${shapeArray[shapeId].shapeName}</h4>
-
+                          <form action="" method="post" onkeydown="return event.key != 'Enter';">
+                            <section class="inputContainer">
                             ${shapeArray[shapeId].form}
                               <br>
                               <section class="outputContainer">
@@ -55,6 +55,7 @@ function populateCalculator (shapeId) {
                               </select>
                               </section>
                             </form>
+                            
                           </div>
                           `
 }

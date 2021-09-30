@@ -6,53 +6,44 @@ TODO------------------
 
 NEW FEATURE----
 
-Move shapes into Wordpress posts
-
 Implement a filter for number of shape edges
 
 
 FUNCTIONAL-----
 
-Add SEO optimization - CHECK DONE
-
 Create functions to calculate shape/perimeter for each shape
     FIRST SHAPE COMPLETE - ADAPT CODE TO OTHER SHAPES
 
-Add backup fonts to $no-continue font stack
+FIND WHY FORM-AREA HAS A MARGIN ON THE RIGHT
 
-Tidy up CSS - combine common css for largescreen and phone
+Format output to allow for longer numbers
 
 
 AESTHETIC-----
 
-Onclick effect on menu icon
+Onclick effect on menu icon (X animation)
 
-Create 2 versions of shapes - simple and glow
+Add animation to phone menu
 
-On click - shape highlights with glow while active
+Use SVGs to create a shape in the calculator area that shifts between shape icons when each shape is clicked
 
-Styling for shape calculator box
+Set a default shape - shifting blob?
 
+Add animation on scroll for shapes list (intersectionObserver)
+
+
+ABANDONED----------
+Moving shapes into wordpress
+
+
+Changelog
+
+Add fallback fonts to $no-continue
+Added rectangle calculator functionality
+Added circle calculator functionality
+Fixed display bugs on phone calculator layout
+Added a scrollbar to phone calculator layout
+Fixed a number of calculation bugs
 Add on hover - scale increase for social media icons
-
-
-
-
-
-
-
-NON-PROJECT---------
-
-Finish Javascript Codecademy
-
-Rewatch animation lecture recording
-
-
-
-
-
-Changelog----
-
-
-Fixed About Me scrolling bug
-Fixed Privacy scrolling bug
+Tidied up css files for largescreen and phone, and consolidated all common styling into main styles file
+Fixed spacing issue from space reserved for scrollbar on shape-list and form-area
