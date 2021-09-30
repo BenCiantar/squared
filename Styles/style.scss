@@ -1,8 +1,10 @@
 $neon-blue: #66FCF1;
 $white: #EFEFEF; //Slighty offset white for OLED screens
 $black: #171717; //Slightly offset black for OLED screens
-$no-continue: no-continue; //Font stack
+$no-continue: no-continue, 'Gemunu Libre', sans-serif; //Header font plus fallbacks
+$gemunu-libre: 'Gemunu Libre', sans-serif; //Calculator font plus fallback
 
+//General styling
 * {
   margin: 0; 
   padding: 0;
@@ -15,7 +17,7 @@ $no-continue: no-continue; //Font stack
     color: $neon-blue;
   }
   a:visited {
-    color: #45A29E;
+    color: $neon-blue;
   }  
 }
 
@@ -30,31 +32,328 @@ body {
   background-color: $black;
 }
 
-#content-privacy {
+h2 {
+  font-family: $no-continue;
+  color: $neon-blue;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: $no-continue;
+  color: $neon-blue;
+}
+
+h4 {
+  font-size: 15px;
+  color: $neon-blue;
+  font-family: $no-continue;
+  text-align: center;
+}
+
+
+
+//Scrollbar formatting
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $neon-blue transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
   background-color: transparent;
-  height: 100%;
-  width: 100%;
-  padding: 20px 15vw 20px 15vw;
-  overflow-x: hidden;
+  border-radius: 20px;
+  border: 2px solid $neon-blue;
+}
+
+
+
+//Header
+#nav {
+  background-color: transparent;
   display: flex;
-  flex-direction: column;
-  justify-content: flext-start;
-  align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $neon-blue;
-  box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
-  p {
-    margin-top: 10px;
-    text-align: left;
-  }
-  h4 {
-    font-size: 15px;
-    color: $neon-blue;
-    margin-top: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: centre;
+  width: 98vw;
+  margin: 0 1vw;
+  padding: 3px;
+  #title {
+    background-color: transparent;
+    padding: 2px;
+    padding-right:1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    a {
+      display: block;
+      text-decoration: none;
+    }
+    h1 {
+      font-family: $no-continue;
+      color: transparent;
+      -webkit-text-stroke-width: 0.2px;
+      -webkit-text-stroke-color: $neon-blue;
+    }
+    h1:hover {
+      text-shadow:  0 0 1px $neon-blue, 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 
+      0 0 5px $neon-blue,  0 0 6px $neon-blue,  0 0 7px $neon-blue;
+      transition: all 0.3s;
+      -webkit-text-stroke-color: $black;
+    }
   }
 }
 
+
+
+//Content
+#content-wrapper {
+  background-color: transparent;
+  margin: 0vh 1vw;
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #calc-area {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $neon-blue;
+    box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+    color: $neon-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #main-shape {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #form-area {
+      background-color: transparent;
+      overflow: scroll;
+      overflow-x: hidden;
+      padding: 0 0 0 12px;
+    }
+  }
+  #shape-list {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    padding: 15px 15px 15px 27px;
+    border-color: $neon-blue;
+    box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+  }
+  .shape-card {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+//Styling for calculator form
+form {
+  height: 50%;
+  width: 100%;
+  padding: 4vh 0 0 1vw;
+  background-color: transparent;
+}
+
+.outputContainer {
+  height: 40px;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+.inputContainer {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+input {
+  height: 30px;
+  width: 35%;
+  min-width: 30px;
+  margin-right: 2%;
+  font-family: $gemunu-libre;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 2%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline-width: 0;
+  border-color: $neon-blue;
+}
+
+.output {
+  height: 30px;
+  width: 35%;
+  font-family: $gemunu-libre;
+  min-width: 30px;
+  margin-right: 2%;
+  text-align: right;
+  padding-right: 2%;
+  background-color: $black;
+  color: $white;
+  border: 1px;
+  border-style: solid;
+  border-color: $neon-blue;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.label {
+  width: 15%;
+  min-width: 40px;
+  height: 30px;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: $neon-blue;
+  text-align: right;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.select {
+  width: 46px;
+  background-color: transparent;
+  color: $neon-blue;
+  border: none;
+  outline-width: 0;
+}
+
+//Set background color for selection->options dropdown
+select > option {
+  background: $black;
+}
+
+
+
+// Remove scroll arrows from number inputs
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+//Footer
+footer {
+  background-color: transparent;
+  height: 10vh;
+  margin: 0 1vw;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  #copyright {
+    background-color: transparent;
+    color: $neon-blue;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-end;
+  }
+  #social-media {
+    background-color: transparent;
+    height: 100%;
+    width: 20%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    ul {
+      background-color: transparent;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 3vh;
+      li a img {
+        height: 25px;
+        width: 25px;
+      }
+      li a img:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  #privacy {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: flex-end;
+  }
+}
+
+
+//Styling for Calculators page
 #content-calc {
   background-color: transparent;
   height: 100%;
@@ -86,17 +385,14 @@ body {
   }
 }
 
-h4 {
-  font-size: 15px;
-  color: $neon-blue;
-  font-family: $no-continue;
-  text-align: center;
-}
 
+
+//Styling for About page
 #content-about {
   background-color: transparent;
-  height: 100%;
-  width: 100%;
+  height: 98%;
+  width: 98%;
+  margin: 1% 1% 1% 1%;
   padding: 20px 15vw 20px 15vw;
   text-align: center;
   overflow-x: hidden;
@@ -124,91 +420,31 @@ h4 {
   }
 }
 
-// Remove scroll arrows from number inputs
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-form {
-  height: 50%;
-  width: 100%;
-  padding: 4vh 0 0 1vw;
+//Styling for Privacy page
+#content-privacy {
   background-color: transparent;
-}
-
-.outputContainer {
-  height: 30px;
-  width: 100%;
+  height: 98%;
+  width: 98%;
+  margin: 1% 1% 1% 1%;
+  padding: 20px 15vw 20px 15vw;
+  overflow-x: hidden;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flext-start;
   align-items: center;
-  background-color: transparent;
-  // flex-wrap: wrap;
-}
-
-.inputContainer {
-  height: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  // flex-wrap: wrap;
-}
-
-input {
-  height: 30px;
-  width: 35%;
-  min-width: 30px;
-  margin-right: 2%;
-  font-family: arial;
-  font-size: 16px;
-  text-align: right;
-  padding-right: 2%;
-  background-color: $black;
-  color: $white;
-  border: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: $neon-blue;
-  border-radius: 3px;
-}
-
-.output {
-  height: 30px;
-  width: 35%;
-  min-width: 30px;
-  margin-right: 2%;
-  text-align: right;
-  padding-right: 2%;
-  background-color: $black;
-  color: $white;
-  border: 1px;
-  border-style: solid;
-  border-color: $neon-blue;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.label {
-  width: 15%;
-  min-width: 40px;
-  height: 30px;
-  color: $neon-blue;
-  text-align: right;
-  margin-right: 8px;
-}
-
-.select {
-  width: 46px;
+  box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+  p {
+    margin-top: 10px;
+    text-align: left;
+  }
+  h4 {
+    font-size: 15px;
+    color: $neon-blue;
+    margin-top: 15px;
+  }
 }
