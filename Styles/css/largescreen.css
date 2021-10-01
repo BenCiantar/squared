@@ -4,7 +4,7 @@
 
 #nav #reg-menu {
   background-color: transparent;
-  padding: 2px;
+  padding: 2px 2px 2px 1vw;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +47,7 @@
 
 #nav #reg-menu ul a {
   color: #66FCF1;
-  font-size: 19px;
+  font-size: 20px;
   text-decoration: none;
   font-family: no-continue;
 }
@@ -124,6 +124,10 @@
   margin: 1vh 0 1vh 1vw;
 }
 
+#content-wrapper #calc-area h2 {
+  font-size: 30px;
+}
+
 #content-wrapper #calc-area #main-shape {
   height: 28vh;
   min-height: 180px;
@@ -131,9 +135,9 @@
   padding: 4vh 0 0 0;
 }
 
-#content-wrapper #calc-area #main-shape img {
-  width: 65%;
-  max-width: 180px;
+#content-wrapper #calc-area #main-shape svg {
+  width: 60%;
+  max-width: 140px;
   height: auto;
 }
 

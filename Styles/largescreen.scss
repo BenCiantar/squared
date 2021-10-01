@@ -11,7 +11,7 @@ $no-continue: no-continue; //Font stack
   height: 13vh;
   #reg-menu {
     background-color: transparent;
-    padding: 2px;
+    padding: 2px 2px 2px 1vw;
     overflow: visible;
     display: flex;
     flex-direction: row;
@@ -31,7 +31,7 @@ $no-continue: no-continue; //Font stack
       }
       a {
         color: $neon-blue;
-        font-size: 19px;
+        font-size: 20px;
         text-decoration: none;
         font-family: $no-continue;
       }
@@ -91,14 +91,17 @@ $no-continue: no-continue; //Font stack
     height: 73vh;
     width: 29vw;
     margin: 1vh 0 1vh 1vw;
+    h2 {
+      font-size: 30px;
+    }
     #main-shape {
       height: 28vh;
       min-height: 180px;
       width: 29vw;
       padding: 4vh 0 0 0;
-      img {
-        width: 65%;
-        max-width: 180px;
+      svg {
+        width: 60%;
+        max-width: 140px;
         height: auto;
       }
     }
