@@ -610,8 +610,8 @@ footer #privacy {
 
 .blob {
   border-radius: 80%;
-  -webkit-animation: morph 2s ease-in-out infinite;
-          animation: morph 2s ease-in-out infinite;
+  -webkit-animation: morph 1.5s linear infinite;
+          animation: morph 1.5s linear infinite;
 }
 
 @-webkit-keyframes morph {

@@ -14,8 +14,6 @@ FUNCTIONAL-----
 Create functions to calculate shape/perimeter for each shape
     FIRST SHAPE COMPLETE - ADAPT CODE TO OTHER SHAPES
 
-FIND WHY FORM-AREA HAS A MARGIN ON THE RIGHT
-
 Format output to allow for longer numbers
 
 
@@ -25,9 +23,11 @@ Onclick effect on menu icon (X animation)
 
 Add animation to phone menu
 
-Use SVGs to create a shape in the calculator area that shifts between shape icons when each shape is clicked
+Improve blob effect on hero image
 
-Set a default shape - shifting blob?
+Fix right triangle svg image
+
+Change shapelist to svg images
 
 Add animation on scroll for shapes list (intersectionObserver)
 
@@ -37,5 +37,29 @@ Moving shapes into wordpress
 
 
 Changelog
+Animations added for all shapes
 
-Transition between blob to regular shape not working - need to animate using different method?
+ASK JOSEF
+
+Code for intersection observer animation?
+
+
+Shapes -            SVG    Formula
+
+Blob                x       NA
+Square              x       x
+Rectangle           x       x
+Circle              x       x
+Octagon             x
+Eq. Triangle        x
+Hexagon             x
+Pentagon            x
+Heptagon            x
+Nonagon             x
+Parallelogram       x
+Rhombus             x
+Right Triangle      x
+Scalene Triangle    x 
+Oval                x
+
+

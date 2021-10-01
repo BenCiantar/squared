@@ -449,7 +449,7 @@ footer {
 //SVG Shape Styling
 .blob {
   border-radius: 80%;
-  animation: morph 2s ease-in-out infinite;
+  animation: morph 1.5s linear infinite;
 }
 
 @keyframes morph {

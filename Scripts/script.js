@@ -5,6 +5,7 @@ let shapeArray = [];
 function init () {
   getShapeData();
   changeIcon(0);
+  // shapesObserver(); WIP
 }
 
 //Fetch the data from shapes.json and for each object run the function to create a html card containing the data.
@@ -90,11 +91,12 @@ menu.style.display = "none";
 
 //Main shape transformation function
 var options = {
-  easing: "linear",
+  // easing: "ease",
+  duration: 1000,
   rotation: "none",
 }
 
-var arrayOfIcons = ["blob", "square", "blob", "circle"];
+var arrayOfIcons = ["blob", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
 var myIcons = new SVGMorpheus("#iconSet", options);
 
 function changeIcon(id) {
@@ -102,7 +104,7 @@ function changeIcon(id) {
   console.log(arrayOfIcons[id]);
   console.log(id);
 
-  if (id == 0 || arrayOfIcons[id] === "blob") {
+  if (id == 0) {
     document.getElementById("iconSet").classList.add("blob");
   } else {
     document.getElementById("iconSet").classList.remove("blob");
@@ -110,3 +112,22 @@ function changeIcon(id) {
 
 }
 
+
+//Function to animate shape cards as they transition into view WIP
+// function shapesObserver() {
+//   const options = { 
+//     root: document.getElementById("shape-list"), 
+//     threshold: 0.5
+//     } 
+    
+//     function callback (entries) { 
+//       let array = document.querySelectorAll('.shape-card'); 
+
+//       let observer = new IntersectionObserver(callback, options);
+
+//       for (let i = 0; i < target.length; i++) { 
+//       observer.observe(array[i]); 
+//       console.log(array);
+//       }
+//     }
+//   }
