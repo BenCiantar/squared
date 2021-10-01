@@ -4,7 +4,7 @@
 
 #nav #reg-menu {
   background-color: transparent;
-  padding: 2px;
+  padding: 2px 2px 2px 1vw;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +47,7 @@
 
 #nav #reg-menu ul a {
   color: #66FCF1;
-  font-size: 19px;
+  font-size: 20px;
   text-decoration: none;
   font-family: no-continue;
 }

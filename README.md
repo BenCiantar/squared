@@ -31,13 +31,17 @@ Change shapelist to svg images
 
 Add animation on scroll for shapes list (intersectionObserver)
 
+Make shapelist shapes smaller, and scale up when selected
+
+Shapelist to flex end?
+
 
 ABANDONED----------
 Moving shapes into wordpress
 
 
 Changelog
-Animations added for all shapes
+
 
 ASK JOSEF
 
