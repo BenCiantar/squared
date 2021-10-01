@@ -38,12 +38,4 @@ Moving shapes into wordpress
 
 Changelog
 
-Add fallback fonts to $no-continue
-Added rectangle calculator functionality
-Added circle calculator functionality
-Fixed display bugs on phone calculator layout
-Added a scrollbar to phone calculator layout
-Fixed a number of calculation bugs
-Add on hover - scale increase for social media icons
-Tidied up css files for largescreen and phone, and consolidated all common styling into main styles file
-Fixed spacing issue from space reserved for scrollbar on shape-list and form-area
+Transition between blob to regular shape not working - need to animate using different method?

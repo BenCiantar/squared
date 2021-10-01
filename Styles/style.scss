@@ -35,7 +35,6 @@ body {
 h2 {
   font-family: $no-continue;
   color: $neon-blue;
-  font-size: 30px;
   text-decoration: underline;
 }
 
@@ -148,14 +147,14 @@ h4 {
       background-color: transparent;
       overflow: scroll;
       overflow-x: hidden;
-      padding: 0 0 0 12px;
+      padding: 0 0 0 12px; //Offset gutter created by scrollbar
     }
   }
   #shape-list {
     background-color: transparent;
     border-width: 2px;
     border-style: solid;
-    padding: 15px 15px 15px 27px;
+    padding: 15px 15px 15px 27px; //Offset gutter created by scrollbar
     border-color: $neon-blue;
     box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
     overflow: scroll;
@@ -438,13 +437,29 @@ footer {
   border-style: solid;
   border-color: $neon-blue;
   box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
-  p {
-    margin-top: 10px;
-    text-align: left;
-  }
   h4 {
     font-size: 15px;
     color: $neon-blue;
     margin-top: 15px;
   }
+}
+
+
+
+//SVG Shape Styling
+.blob {
+  border-radius: 80%;
+  animation: morph 2s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+  border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
+  } 
+  50% {
+    border-radius:  40% 70% 80% 50% / 60% 70% 40% 60%;
+  }
+  100% {
+    border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
+  } 
 }

@@ -91,10 +91,13 @@ $no-continue: no-continue; //Font stack
     height: 37vh;
     width: 96vw;
     margin: 1vh 0 0 0;
+    h2 {
+      font-size: 20px;
+    }
     #main-shape {
       height: 17vh;
       width: 96vw;
-      img {
+      svg {
         height: 60%;
         width: auto;
       }

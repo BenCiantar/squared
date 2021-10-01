@@ -1,7 +1,7 @@
 [
   {
     "shapeName": "Square",
-    "id": 0,
+    "id": 1,
     "cardImage": "../Images/shapes/square.png",
     "calcImage": "../Images/shapes/square.png",
     "formula" : "calculatorSquare()",
@@ -9,7 +9,7 @@
   },
   {
     "shapeName": "Rectangle",
-    "id": 1,
+    "id": 2,
     "cardImage": "../Images/shapes/rectangle.svg",
     "calcImage": "../Images/shapes/rectangle.svg",
     "formula" : "calculatorRectangle()",
@@ -18,77 +18,75 @@
   },  
   {
     "shapeName": "Circle",
-    "id": 2,
+    "id": 3,
     "cardImage": "../Images/shapes/circle.png",
     "calcImage": "../Images/shapes/circle.png",
     "formula" : "calculatorCircle()",
     "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
-  
-  
   {
     "shapeName": "Octagon",
-    "id": 3,
+    "id": 4,
     "cardImage": "../Images/shapes/octagon.png",
     "calcImage": "../Images/shapes/octagon.png"
   },
   {
-    "shapeName": "Equilateral Triangle",
-    "id": 4,
+    "shapeName": "Eq. Triangle",
+    "id": 5,
     "cardImage": "../Images/shapes/triangle.png",
     "calcImage": "../Images/shapes/triangle.png"
   },
   {
     "shapeName": "Hexagon",
-    "id": 5,
+    "id": 6,
     "cardImage": "../Images/shapes/hexagon.png",
     "calcImage": "../Images/shapes/hexagon.png"
   },
   {
     "shapeName": "Pentagon",
-    "id": 6,
+    "id": 7,
     "cardImage": "../Images/shapes/pentagon.png",
     "calcImage": "../Images/shapes/pentagon.png"
   },
   {
     "shapeName": "Heptagon",
-    "id": 7,
+    "id": 8,
     "cardImage": "../Images/shapes/heptagon.png",
     "calcImage": "../Images/shapes/heptagon.png"
   },
   {
     "shapeName": "Nonagon",
-    "id": 8,
+    "id": 9,
     "cardImage": "../Images/shapes/nonagon.png",
     "calcImage": "../Images/shapes/nonagon.png"
   },
   {
     "shapeName": "Parallelogram",
-    "id": 9,
+    "id": 10,
     "cardImage": "../Images/shapes/parallelogram.png",
     "calcImage": "../Images/shapes/parallelogram.png"
   },
   {
     "shapeName": "Rhombus",
-    "id": 10,
+    "id": 11,
     "cardImage": "../Images/shapes/rhombus.png",
     "calcImage": "../Images/shapes/rhombus.png"
   },
   {
     "shapeName": "Right Triangle",
-    "id": 11,
+    "id": 12,
     "cardImage": "../Images/shapes/right-triangle.png",
     "calcImage": "../Images/shapes/right-triangle.png"
   },
   {
     "shapeName": "Scalene Triangle",
-    "id": 12,
+    "id": 13,
     "cardImage": "../Images/shapes/scalene-triangle.png",
     "calcImage": "../Images/shapes/scalene-triangle.png"
   },
   {
     "shapeName": "Oval",
-    "id": 13,
+    "id": 14,
     "cardImage": "../Images/shapes/oval.png",
     "calcImage": "../Images/shapes/oval.png"
   }
