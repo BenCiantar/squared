@@ -6,8 +6,6 @@ TODO------------------
 
 NEW FEATURE----
 
-Implement a filter for number of shape edges
-
 
 FUNCTIONAL-----
 
@@ -27,13 +25,7 @@ Improve blob effect on hero image
 
 Fix right triangle svg image
 
-Change shapelist to svg images
-
-Add animation on scroll for shapes list (intersectionObserver)
-
 Make shapelist shapes smaller, and scale up when selected
-
-Shapelist to flex end?
 
 
 ABANDONED----------
@@ -41,11 +33,6 @@ Moving shapes into wordpress
 
 
 Changelog
-
-
-ASK JOSEF
-
-Code for intersection observer animation?
 
 
 Shapes -            SVG    Formula
