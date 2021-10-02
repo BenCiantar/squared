@@ -10,7 +10,7 @@ NEW FEATURE----
 FUNCTIONAL-----
 
 Create functions to calculate shape/perimeter for each shape
-    FIRST SHAPE COMPLETE - ADAPT CODE TO OTHER SHAPES
+    Three shapes complete - adapt to other shapes
 
 Format output to allow for longer numbers
 
@@ -21,15 +21,10 @@ Onclick effect on menu icon (X animation)
 
 Add animation to phone menu
 
-Improve blob effect on hero image
-
-Fix right triangle svg image
+Remove blob from IconSet - have it popluate the area on load - add an animation for first time it leaves?
 
 Make shapelist shapes smaller, and scale up when selected
 
-
-ABANDONED----------
-Moving shapes into wordpress
 
 
 Changelog

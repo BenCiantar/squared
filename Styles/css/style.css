@@ -639,31 +639,45 @@ footer #privacy {
 
 .blob {
   border-radius: 80%;
-  -webkit-animation: morph 1.5s linear infinite;
-          animation: morph 1.5s linear infinite;
+  -webkit-animation: transform 5s linear infinite both alternate;
+          animation: transform 5s linear infinite both alternate;
 }
 
-@-webkit-keyframes morph {
-  0% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+@-webkit-keyframes transform {
+  0%,
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
   }
-  50% {
-    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
   }
   100% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
   }
 }
 
-@keyframes morph {
-  0% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+@keyframes transform {
+  0%,
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
   }
-  50% {
-    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
   }
   100% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

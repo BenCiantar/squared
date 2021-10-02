@@ -94,14 +94,14 @@ function shapeChange(id) {
   changeIcon(id);
 }
 
-var morpheusOptions = {
+const morpheusOptions = {
   easing: "expo-in-out", //Fiddle with this
   duration: 1000,
   rotation: "none",
 }
 
-var arrayOfIcons = ["blob", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
-var myIcons = new SVGMorpheus("#iconSet", morpheusOptions);
+const arrayOfIcons = ["blob", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
+const myIcons = new SVGMorpheus("#iconSet", morpheusOptions);
 
 function changeIcon(id) {
   myIcons.to(arrayOfIcons[id]);

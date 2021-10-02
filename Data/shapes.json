@@ -1,6 +1,7 @@
 [
   {
     "shapeName": "Square",
+    "fullShapeName": "Square",
     "id": 1,
     "sides": 4,
     "cardImage": "../Images/shapes/square.svg",
@@ -9,6 +10,7 @@
   },
   {
     "shapeName": "Rectangle",
+    "fullShapeName": "Rectangle",
     "id": 2,
     "sides": 4,
     "cardImage": "../Images/shapes/rectangle.svg",
@@ -18,6 +20,7 @@
   },  
   {
     "shapeName": "Circle",
+    "fullShapeName": "Circle",
     "id": 3,
     "sides": 1,
     "cardImage": "../Images/shapes/circle.svg",
@@ -26,6 +29,7 @@
   },
   {
     "shapeName": "Octagon",
+    "fullShapeName": "Octagon",
     "id": 4,
     "sides": 8,
     "cardImage": "../Images/shapes/octagon.svg",
@@ -33,6 +37,7 @@
   },
   {
     "shapeName": "Eq. Triangle",
+    "fullShapeName": "Equilateral Triangle",
     "id": 5,
     "sides": 3,
     "cardImage": "../Images/shapes/Eq. triangle.svg",
@@ -41,6 +46,7 @@
   },
   {
     "shapeName": "Hexagon",
+    "fullShapeName": "Hexagon",
     "id": 6,
     "sides": 6,
     "cardImage": "../Images/shapes/hexagon.svg",
@@ -49,6 +55,7 @@
   },
   {
     "shapeName": "Pentagon",
+    "fullShapeName": "Pentagon",
     "id": 7,
     "sides": 5,
     "cardImage": "../Images/shapes/pentagon.svg",
@@ -57,6 +64,7 @@
   },
   {
     "shapeName": "Heptagon",
+    "fullShapeName": "Heptagon",
     "id": 8,
     "sides": 7,
     "cardImage": "../Images/shapes/heptagon.svg",
@@ -65,6 +73,7 @@
   },
   {
     "shapeName": "Nonagon",
+    "fullShapeName": "Nonagon",
     "id": 9,
     "sides": 9,
     "cardImage": "../Images/shapes/nonagon.svg",
@@ -73,6 +82,7 @@
   },
   {
     "shapeName": "Parallelogram",
+    "fullShapeName": "Parallelogram",
     "id": 10,
     "sides": 4,
     "cardImage": "../Images/shapes/parallelogram.svg",
@@ -81,6 +91,7 @@
   },
   {
     "shapeName": "Rhombus",
+    "fullShapeName": "Rhombus",
     "id": 11,
     "sides": 4,
     "cardImage": "../Images/shapes/rhombus.svg",
@@ -88,7 +99,8 @@
 
   },
   {
-    "shapeName": "Right Triangle",
+    "shapeName": "R. Triangle",
+    "fullShapeName": "Right Triangle",
     "id": 12,
     "sides": 3,
     "cardImage": "../Images/shapes/right triangle.svg",
@@ -96,7 +108,8 @@
 
   },
   {
-    "shapeName": "Scalene Triangle",
+    "shapeName": "Scl. Triangle",
+    "fullShapeName": "Scalene Triangle",
     "id": 13,
     "sides": 3,
     "cardImage": "../Images/shapes/scalene triangle.svg",
@@ -105,6 +118,7 @@
   },
   {
     "shapeName": "Oval",
+    "fullShapeName": "Oval",
     "id": 14,
     "sides": 1,
     "cardImage": "../Images/shapes/oval.svg",
