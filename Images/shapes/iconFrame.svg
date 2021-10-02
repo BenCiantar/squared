@@ -3,7 +3,7 @@
     <!-- <rect width="200" height="200" fill="white"/> -->
     
     <g id="blob">
-        <circle id="Blob" cx="99" cy="99" r="100" fill="#66FCF1"/>
+        <rect id="Square" width="200" height="200" fill="#66FCF1"/>
     </g>
 
     <g id="square">

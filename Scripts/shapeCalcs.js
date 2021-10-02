@@ -57,6 +57,7 @@ function calculatorSquare() {
             document.getElementById('area').innerHTML = (n1 * n1).toFixed(2);
         }
     }
+    return false;
 }
 
 
@@ -139,6 +140,7 @@ function calculatorRectangle() {
             document.getElementById('area').innerHTML = (n1 * n2).toFixed(2);
         }
     }
+    return false;
 } 
 
 
@@ -199,4 +201,5 @@ function calculatorCircle() {
             document.getElementById('area').innerHTML = (pi * (n1 * n1)).toFixed(2);
         }
     }
+    return false;
 }

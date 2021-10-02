@@ -37,7 +37,7 @@ function populateCalculator (shapeId) {
     document.getElementById("form-area").innerHTML = 
                           `
                           <h4>${shapeArray[shapeId].shapeName}</h4>
-                          <form action="" method="post" onkeydown="return event.key != 'Enter';">
+                          <form action="" method="post" onsubmit="return ${shapeArray[shapeId].formula};">
                             <section class="inputContainer">
                             ${shapeArray[shapeId].form}
                               <br>
@@ -66,11 +66,6 @@ function populateCalculator (shapeId) {
                           `
 }
 
-function shapeChange(id) {
-  populateCalculator(id - 1); //Reduce by 1 to correct for position in array
-  changeIcon(id);
-}
-
 
 //Phone Navigation Menu
 
@@ -94,6 +89,11 @@ menu.style.display = "none";
 //Shape Transformation
 
 //Main shape transformation function
+function shapeChange(id) {
+  populateCalculator(id - 1); //Reduce by 1 to correct for position in array
+  changeIcon(id);
+}
+
 var morpheusOptions = {
   easing: "expo-in-out", //Fiddle with this
   duration: 1000,
