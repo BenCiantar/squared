@@ -61,7 +61,6 @@ function populateCalculator (shapeId) {
                               </select>
                               </section>
                             </form>
-                            
                           </div>
                           `
 }
@@ -91,7 +90,7 @@ menu.style.display = "none";
 
 //Main shape transformation function
 var options = {
-  // easing: "ease",
+  easing: "expo-in-out", //Fiddle with this
   duration: 1000,
   rotation: "none",
 }
@@ -101,8 +100,6 @@ var myIcons = new SVGMorpheus("#iconSet", options);
 
 function changeIcon(id) {
   myIcons.to(arrayOfIcons[id]);
-  console.log(arrayOfIcons[id]);
-  console.log(id);
 
   if (id == 0) {
     document.getElementById("iconSet").classList.add("blob");
