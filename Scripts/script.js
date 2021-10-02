@@ -1,11 +1,10 @@
-//Global variable to pass JSOn data down to other functions
+//Global variable to pass JSON data down to other functions
 let shapeArray = [];
 
 //Called onload, run all of these functions when body loads
 function init () {
   getShapeData();
   changeIcon(0);
-  // shapesObserver(); WIP
 }
 
 //Fetch the data from shapes.json and for each object run the function to create a html card containing the data.
@@ -29,6 +28,7 @@ function createShapeCard(shape) {
                                   <h3> ${shape.shapeName}</h3>  
                                 </div>
                                 `;
+    shapesObserver(); //Run here after shape-list has been populated
 }
 
 //Onclick populate calculator with data from corresponding shape object
@@ -89,14 +89,14 @@ menu.style.display = "none";
 
 
 //Main shape transformation function
-var options = {
+var morpheusOptions = {
   easing: "expo-in-out", //Fiddle with this
   duration: 1000,
   rotation: "none",
 }
 
 var arrayOfIcons = ["blob", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
-var myIcons = new SVGMorpheus("#iconSet", options);
+var myIcons = new SVGMorpheus("#iconSet", morpheusOptions);
 
 function changeIcon(id) {
   myIcons.to(arrayOfIcons[id]);
@@ -110,21 +110,35 @@ function changeIcon(id) {
 }
 
 
-//Function to animate shape cards as they transition into view WIP
-// function shapesObserver() {
-//   const options = { 
-//     root: document.getElementById("shape-list"), 
-//     threshold: 0.5
-//     } 
-    
-//     function callback (entries) { 
-//       let array = document.querySelectorAll('.shape-card'); 
+//Set the wrapper to observe and the % of card that must be within the wrapper to trigger the observer
+let observerOptions = {
+  root: document.getElementById("shape-list"),
+  threshold: 0.4
+}
 
-//       let observer = new IntersectionObserver(callback, options);
+//Assign a function to the variable observer that observes each shape card and checks if it is intersecting shape-list
+//Called on each loop of shapesObserver on each shape-card placed in the array
+let observer = new IntersectionObserver(function (entries) {
+  for (let i = 0; i < entries.length; i++) {
+    //Checks if the elements started in view or have been in view, and assigns them a class to revert to normal appearance
+    if (entries[i].isIntersecting) {
+      entries[i].target.classList.add('been-in-view');
+    } else {
+      entries[i].target.classList.remove("been-in-view");
+    }
+  }
+}, observerOptions);
 
-//       for (let i = 0; i < target.length; i++) { 
-//       observer.observe(array[i]); 
-//       console.log(array);
-//       }
-//     }
-//   }
+//Change appearance of shape cards as they transition into view by looping through all shape cards and running the observer 
+function shapesObserver() {
+  let array = document.querySelectorAll('.shape-card');
+    for (let i = 0; i < array.length; i++) {
+    observer.observe(array[i]);
+    }
+  }
+
+
+
+
+
+  
