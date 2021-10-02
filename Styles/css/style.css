@@ -227,6 +227,13 @@ h4 {
       flex-wrap: wrap;
 }
 
+#content-wrapper #shape-list h1 {
+  font-family: no-continue, "Gemunu Libre", sans-serif;
+  color: #66FCF1;
+  font-size: 40px;
+  margin: auto;
+}
+
 #content-wrapper .shape-card {
   background-color: transparent;
   display: -webkit-box;
@@ -424,7 +431,7 @@ footer {
           align-items: center;
 }
 
-footer #copyright {
+footer #filter {
   background-color: transparent;
   color: #66FCF1;
   height: 100%;

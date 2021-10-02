@@ -5,7 +5,11 @@ let shapeArray = [];
 function init () {
   getShapeData();
   changeIcon(0);
+  createFilter();
 }
+
+
+//Populate Main Content
 
 //Fetch the data from shapes.json and for each object run the function to create a html card containing the data.
     function getShapeData() {
@@ -14,9 +18,7 @@ function init () {
             .then((shapes) => {
               //Save the array to a global variable for use in other functions
               shapeArray = shapes;
-                for (let i = 0; i < shapes.length; i++) {
-                    createShapeCard(shapes[i])
-                }
+              filterShapes(); //Run here after shape-list has been populated
             });
         }
 
@@ -28,7 +30,6 @@ function createShapeCard(shape) {
                                   <h3> ${shape.shapeName}</h3>  
                                 </div>
                                 `;
-    shapesObserver(); //Run here after shape-list has been populated
 }
 
 //Onclick populate calculator with data from corresponding shape object
@@ -70,6 +71,9 @@ function shapeChange(id) {
   changeIcon(id);
 }
 
+
+//Phone Navigation Menu
+
 //Toggle phone menu display when clicking menu icon
 function togglePhoneMenu() {
   var menu = document.getElementById("phone-menu");
@@ -87,6 +91,7 @@ menu.style.display = "none";
 };
 
 
+//Shape Transformation
 
 //Main shape transformation function
 var morpheusOptions = {
@@ -110,10 +115,12 @@ function changeIcon(id) {
 }
 
 
+//Intersection Observer - Scroll in Animation
+
 //Set the wrapper to observe and the % of card that must be within the wrapper to trigger the observer
 let observerOptions = {
   root: document.getElementById("shape-list"),
-  threshold: 0.4
+  threshold: 0.6
 }
 
 //Assign a function to the variable observer that observes each shape card and checks if it is intersecting shape-list
@@ -138,7 +145,45 @@ function shapesObserver() {
   }
 
 
+//Filter
 
+let currentFilter = "Any";
 
+//Create an array of numbers then call the function to populate the filter dropdown
+function createFilter() {
+  const filterItems = ['Any','1', '2', '3', '4', '5', '6','7+'];
 
+  let filterContents = document.getElementById("filter").innerHTML;
+  filterContents += `<p>Filter by sides:</p><select name=\"filter-select\" id=\"filter-select\" class=\"select\" onchange=\"filterShapes()\">`;
   
+  for (let i = 0; i < filterItems.length; i++) {
+    filterContents += `<option value=\"${filterItems[i]}\">${filterItems[i]}</option>`
+  }
+
+  filterContents += `</select>`;
+
+  document.getElementById("filter").innerHTML = filterContents;
+}
+
+//Loop through shapoes and compare sides attribute against filter selection
+function filterShapes() {
+  currentFilter = document.getElementById('filter-select').value;
+  
+  var found = false;
+  document.getElementById("shape-list").innerHTML = "";
+
+  for (let i = 0; i < shapeArray.length; i++) {
+
+    if (shapeArray[i].sides == currentFilter || currentFilter == 'Any' || (currentFilter == "7+" && shapeArray[i].sides >= 7)) {
+      createShapeCard(shapeArray[i]);
+      found = true;
+    }
+  }
+
+  if (!found) {
+    document.getElementById("shape-list").innerHTML = "<h1>No matching shapes!</h1>";
+  }
+
+  shapesObserver(); //Run here after list has been filtered and shape-list has been populated
+}
+
