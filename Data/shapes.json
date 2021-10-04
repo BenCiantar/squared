@@ -42,7 +42,8 @@
     "id": 5,
     "sides": 3,
     "cardImage": "../Images/shapes/Eq. triangle.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "formula": "calculatorEqTriangle()",
+    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorEqTriangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorEqTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
 
   },
   {
