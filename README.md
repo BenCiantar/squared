@@ -35,3 +35,4 @@ Included features:
                   Fix blob animation
                   Settle on transition type (ease-in-out etc.)
                   Write presentation outline
+   
