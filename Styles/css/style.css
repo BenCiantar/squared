@@ -21,6 +21,10 @@
   font-size: 14px;
 }
 
+* footer p {
+  font-family: "Gemunu Libre", sans-serif;
+}
+
 * a {
   color: #66FCF1;
 }
@@ -287,8 +291,10 @@ form {
 }
 
 .outputContainer {
-  height: 40px;
+  height: auto;
+  min-height: 30px;
   width: 100%;
+  margin: 0 0 5px 0;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,7 +313,8 @@ form {
 }
 
 .inputContainer {
-  height: 40px;
+  height: auto;
+  min-height: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,14 +333,17 @@ form {
 }
 
 input {
-  height: 30px;
+  height: auto;
+  min-height: 30px;
   width: 35%;
   min-width: 30px;
+  inline-size: 35%;
+  word-break: break-all;
   margin-right: 2%;
   font-family: "Gemunu Libre", sans-serif;
   font-size: 16px;
   text-align: right;
-  padding-right: 2%;
+  padding: 2%;
   background-color: #171717;
   color: #EFEFEF;
   border: 1px;
@@ -348,13 +358,16 @@ input:focus {
 }
 
 .output {
-  height: 30px;
+  height: auto;
+  min-height: 30px;
   width: 35%;
+  inline-size: 35%;
+  word-break: break-all;
   font-family: "Gemunu Libre", sans-serif;
   min-width: 30px;
   margin-right: 2%;
   text-align: right;
-  padding-right: 2%;
+  padding: 2%;
   background-color: #171717;
   color: #EFEFEF;
   border: 1px;
@@ -406,6 +419,8 @@ input:focus {
   color: #66FCF1;
   border: none;
   outline-width: 0;
+  font-size: 14px;
+  font-family: "Gemunu Libre", sans-serif;
 }
 
 select > option {
