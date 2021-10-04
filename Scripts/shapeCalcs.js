@@ -805,9 +805,9 @@ function calculatorRightTriangle() {
 } 
 
 
-//SCALENE TRIANGLE
+//OVAL
 
-function calculatorScaleneTriangle() {
+function calculatorOval() {
     let n1 = parseInt(document.getElementById('n1').value, 10);
     let num1 = n1;
 
@@ -868,19 +868,19 @@ function calculatorScaleneTriangle() {
     if (n1 > 0 && n2 > 0) {
         //Convert from mm to desired output unit and output area  
         if (outUnit2 == "mm") {
-            document.getElementById('area').innerHTML = ((n1 * n2) / 2).toFixed(1);
+            document.getElementById('area').innerHTML = (pi * (n1 / 2) * (n2 / 2)).toFixed(1);
         } else if (outUnit2 == "cm") {
             n1 = n1 / 10;
             n2 = n2 / 10;
-            document.getElementById('area').innerHTML = ((n1 * n2) / 2).toFixed(1);
+            document.getElementById('area').innerHTML = (pi * (n1 / 2) * (n2 / 2)).toFixed(1);
         } else if (outUnit2 == "m") {
             n1 = n1 / 1000;
             n2 = n2 / 1000;
-            document.getElementById('area').innerHTML = ((n1 * n2) / 2).toFixed(1);
+            document.getElementById('area').innerHTML = (pi * (n1 / 2) * (n2 / 2)).toFixed(1);
         } else if (outUnit2 == "km") {
             n1 = n1 / 1000000;
             n2 = n2 / 1000000;
-            document.getElementById('area').innerHTML = ((n1 * n2) / 2).toFixed(1);
+            document.getElementById('area').innerHTML = (pi * (n1 / 2) * (n2 / 2)).toFixed(1);
         }
     }
     return false;
