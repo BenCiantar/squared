@@ -1,4 +1,4 @@
-//Styles for devices with up to 481px screen width
+//Styles for devices with up to 600px screen width
 $neon-blue: #66FCF1;
 $white: #EFEFEF; //Slighty offset white for OLED screens
 $black: #171717; //Slightly offset black for OLED screens
@@ -13,19 +13,48 @@ $no-continue: no-continue; //Font stack
   #reg-menu {
     display: none
   }
-  #ham-menu {
+  #menu-btn {
     background-color: transparent;
-    padding: 2px;
-    overflow: visible;
     display: flex;
     flex-direction: row;
-    justify-content: flext-start;
+    justify-content: center;
     align-items: center;
-    width: 16vw;
+    width: 80px;
     height: 100%;
-    img {
-      width: 70%;
-      min-width: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    .menu-icon {
+      width: 40px;
+      height: 5px;
+      background: $neon-blue;
+      border-radius: 5px;
+      transition: all .5s ease-in-out;
+    }
+    .menu-icon::before,
+    .menu-icon::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 5px;
+      background: $neon-blue;
+      border-radius: 5px;
+      transition: all .5s ease-in-out;
+    }
+    .menu-icon::before {
+      transform: translateY(-12px);
+    }
+    .menu-icon::after {
+      transform: translateY(12px);
+    }
+    .menu-icon.open {
+      transform: opacity(0);
+      background: transparent;
+    }
+    .menu-icon.open::before {
+      transform: rotate(45deg);
+    }
+    .menu-icon.open::after {
+      transform: rotate(-45deg);
     }
   }
   #title {
@@ -42,6 +71,8 @@ $no-continue: no-continue; //Font stack
 }
 
 #phone-menu {
+  transform: translateX(-800px); //Default setting on page load
+  transition: all .5s ease-in-out;
   position: absolute;
   height: 79vh;
   width: 98vw;
@@ -80,7 +111,6 @@ $no-continue: no-continue; //Font stack
       }
     }
   }
-  display: none;
 }
 
 // Content

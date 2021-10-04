@@ -70,20 +70,40 @@ function populateCalculator (shapeId) {
 //Phone Navigation Menu
 
 //Toggle phone menu display when clicking menu icon
-function togglePhoneMenu() {
-  var menu = document.getElementById("phone-menu");
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
-}
+// function togglePhoneMenu() {
+//   const menu = document.getElementById("phone-menu");
+//   if (menu.style.display === "none") {
+//     menu.style.display = "block";
+//   } else {
+//     menu.style.display = "none";
+//   }
+// }
 
-//Hide phone menu on screen resize
+
+//Hide phone menu and reset icon on screen resize
 function hidePhoneMenu(){
-var menu = document.getElementById("phone-menu");
-menu.style.display = "none";
+  let menu = document.getElementById("phone-menu");
+  menu.style.transform = "translateX(-800px)";
+  menuIcon.classList.remove('open');
 };
+
+//Transform hamburger menu icon and move phone nav menu on/off screen
+const menuBtn = document.getElementById("menu-btn");
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.getElementById("phone-menu");
+// let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+  if(!menuIcon.classList.contains('open')) {
+    menuIcon.classList.add('open');
+    menu.style.transform = "translateX(0px)";
+    menuOpen = true;
+  } else {
+    menuIcon.classList.remove('open');
+    menu.style.transform = "translateX(-800px)";
+    menuOpen = false;
+  }
+});
 
 
 //Shape Transformation

@@ -72,11 +72,11 @@
   color: #171717;
 }
 
-#nav #ham-menu {
+#nav #menu-btn {
   display: none;
 }
 
-#nav #ham-menu img {
+#nav #menu-btn img {
   height: 100%;
 }
 
@@ -132,7 +132,7 @@
   height: 28vh;
   min-height: 180px;
   width: 29vw;
-  padding: 4vh 0 0 0;
+  padding: 4vh 0 0 12px;
 }
 
 #content-wrapper #calc-area #main-shape svg {
