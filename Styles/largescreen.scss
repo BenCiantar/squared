@@ -1,4 +1,4 @@
-// Styling for devices with 481px+ screen width
+// Styling for devices with 601px+ screen width
 $neon-blue: #66FCF1;
 $white: #EFEFEF; //Slighty offset white for OLED screens
 $black: #171717; //Slightly offset black for OLED screens
@@ -52,7 +52,7 @@ $no-continue: no-continue; //Font stack
       }
     }
   }
-  #ham-menu {
+  #menu-btn {
     display: none;
     img {
       height: 100%;
@@ -73,7 +73,7 @@ $no-continue: no-continue; //Font stack
   }
 }
 
-//Default hidden state of menu on large screens
+// Default hidden state of menu on large screens
 #phone-menu {
   display: none;
   z-index: -2;
@@ -98,7 +98,7 @@ $no-continue: no-continue; //Font stack
       height: 28vh;
       min-height: 180px;
       width: 29vw;
-      padding: 4vh 0 0 0;
+      padding: 4vh 0 0 12px;
       svg {
         width: 60%;
         max-width: 140px;
@@ -132,15 +132,16 @@ $no-continue: no-continue; //Font stack
       width: 200px;
       padding: 20px 0 20px 0;
       img {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
+        transition: all .3s ease-in-out;
       }
     }
     .shape-card:hover {
       h3 {
         color: $black;
         text-shadow: 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 0 0 5px $neon-blue;
-        transition: all 0.3s;
+        transition: all .3s;
       }
     }
   }

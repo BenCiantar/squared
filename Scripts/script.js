@@ -25,7 +25,7 @@ function init () {
 //Loop through the json data and create an html card for each shape
 function createShapeCard(shape) {
     document.getElementById("shape-list").innerHTML += `
-                                <div class="shape-card" onclick=shapeChange(${shape.id})>
+                                <div class="shape-card" id="shape-${shape.id}" onclick=shapeChange(${shape.id})>
                                   <img src="${shape.cardImage}">
                                   <h3> ${shape.shapeName}</h3>  
                                 </div>
@@ -70,20 +70,40 @@ function populateCalculator (shapeId) {
 //Phone Navigation Menu
 
 //Toggle phone menu display when clicking menu icon
-function togglePhoneMenu() {
-  var menu = document.getElementById("phone-menu");
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
-}
+// function togglePhoneMenu() {
+//   const menu = document.getElementById("phone-menu");
+//   if (menu.style.display === "none") {
+//     menu.style.display = "block";
+//   } else {
+//     menu.style.display = "none";
+//   }
+// }
 
-//Hide phone menu on screen resize
+
+//Hide phone menu and reset icon on screen resize
 function hidePhoneMenu(){
-var menu = document.getElementById("phone-menu");
-menu.style.display = "none";
+  let menu = document.getElementById("phone-menu");
+  menu.style.transform = "translateX(-800px)";
+  menuIcon.classList.remove('open');
 };
+
+//Transform hamburger menu icon and move phone nav menu on/off screen
+const menuBtn = document.getElementById("menu-btn");
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.getElementById("phone-menu");
+// let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+  if(!menuIcon.classList.contains('open')) {
+    menuIcon.classList.add('open');
+    menu.style.transform = "translateX(0px)";
+    menuOpen = true;
+  } else {
+    menuIcon.classList.remove('open');
+    menu.style.transform = "translateX(-800px)";
+    menuOpen = false;
+  }
+});
 
 
 //Shape Transformation
@@ -92,6 +112,7 @@ menu.style.display = "none";
 function shapeChange(id) {
   populateCalculator(id - 1); //Reduce by 1 to correct for position in array
   changeIcon(id);
+  focusShape(id);
 }
 
 const morpheusOptions = {
@@ -112,6 +133,21 @@ function changeIcon(id) {
     document.getElementById("iconSet").classList.remove("blob");
   }
 
+}
+
+
+//Have shape scale up while active
+function focusShape(id) {
+  //Create a nodelist of all shape-card elements
+  let list = document.querySelectorAll(".shape-card");
+
+  //Iterate through all shape cards and remove active class
+  list.forEach(function(shape){
+    shape.classList.remove("active");
+  });       
+
+  //Add active class to the shape that was clicked
+  document.getElementById("shape-" + id).classList.add("active");
 }
 
 

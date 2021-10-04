@@ -161,6 +161,8 @@ h4 {
   -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
           box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
   color: #66FCF1;
+  overflow: scroll;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,6 +180,7 @@ h4 {
 
 #content-wrapper #calc-area #main-shape {
   background-color: transparent;
+  padding: 0 0 0 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,8 +198,6 @@ h4 {
 
 #content-wrapper #calc-area #form-area {
   background-color: transparent;
-  overflow: scroll;
-  overflow-x: hidden;
   padding: 0 0 0 12px;
 }
 
@@ -260,6 +261,18 @@ h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+#content-wrapper .shape-card.active img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#content-wrapper .shape-card.active h3 {
+  color: #171717;
+  text-shadow: 0 0 2px #66FCF1, 0 0 3px #66FCF1, 0 0 4px #66FCF1, 0 0 5px #66FCF1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 #content-wrapper h2 {

@@ -16,7 +16,6 @@
     "cardImage": "../Images/shapes/rectangle.svg",
     "formula" : "calculatorRectangle()",
     "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorRectangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorRectangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Side B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorRectangle()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorRectangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
   },  
   {
     "shapeName": "Circle",
@@ -33,7 +32,8 @@
     "id": 4,
     "sides": 8,
     "cardImage": "../Images/shapes/octagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "formula" : "calculatorOctagon()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorOctagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorOctagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Eq. Triangle",
@@ -41,8 +41,8 @@
     "id": 5,
     "sides": 3,
     "cardImage": "../Images/shapes/Eq. triangle.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorEqTriangle()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorEqTriangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorEqTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Hexagon",
@@ -50,8 +50,8 @@
     "id": 6,
     "sides": 6,
     "cardImage": "../Images/shapes/hexagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorHexagon()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorHexagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorHexagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Pentagon",
@@ -59,8 +59,8 @@
     "id": 7,
     "sides": 5,
     "cardImage": "../Images/shapes/pentagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorPentagon()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorPentagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorPentagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Heptagon",
@@ -68,8 +68,8 @@
     "id": 8,
     "sides": 7,
     "cardImage": "../Images/shapes/heptagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorHeptagon()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorHeptagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorHeptagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Nonagon",
@@ -77,8 +77,8 @@
     "id": 9,
     "sides": 9,
     "cardImage": "../Images/shapes/nonagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorNonagon()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorNonagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorNonagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Parallelogram",
@@ -86,8 +86,8 @@
     "id": 10,
     "sides": 4,
     "cardImage": "../Images/shapes/parallelogram.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorParallelogram()",
+    "form": "<p class=\"label\">Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorParallelogram()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorParallelogram()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Side B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorParallelogram()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorParallelogram()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Rhombus",
@@ -95,8 +95,8 @@
     "id": 11,
     "sides": 4,
     "cardImage": "../Images/shapes/rhombus.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorRhombus()",
+    "form": "<p class=\"label\">Diagonal A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorRhombus()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorRhombus()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Diagonal B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorRhombus()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorRhombus()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "R. Triangle",
@@ -104,8 +104,8 @@
     "id": 12,
     "sides": 3,
     "cardImage": "../Images/shapes/right triangle.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorRightTriangle()",
+    "form": "<p class=\"label\">Straight Side A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorRightTriangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorRightTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Straight Side B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorRightTriangle()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorRightTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Scl. Triangle",
@@ -113,8 +113,8 @@
     "id": 13,
     "sides": 3,
     "cardImage": "../Images/shapes/scalene triangle.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorScaleneTriangle()",
+    "form": "<p class=\"label\">Base: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorScaleneTriangle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorScaleneTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Height: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorScaleneTriangle()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorScaleneTriangle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "Oval",
@@ -122,7 +122,7 @@
     "id": 14,
     "sides": 1,
     "cardImage": "../Images/shapes/oval.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
-
+    "formula": "calculatorOval()",
+    "form": "<p class=\"label\">Length Mjr Axis: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorOval()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorOval()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Length Mnr Axis: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorOval()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorOval()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   }
 ]
