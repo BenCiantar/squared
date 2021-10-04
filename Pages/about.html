@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Squared | Online Shape Calculator - About</title>
     <link rel="stylesheet" href="../Styles/css/style.css">
-    <link rel="stylesheet" media='screen and (max-width: 481px)' href="../Styles/css/phone.css">
-    <link rel="stylesheet" media='screen and (min-width: 481px)' href="../Styles/css/largescreen.css">
+    <link rel="stylesheet" media='screen and (max-width: 600px)' href="../Styles/css/smallscreen.css">
+    <link rel="stylesheet" media='screen and (min-width: 600px)' href="../Styles/css/largescreen.css">
  </head>
  <body onresize="hidePhoneMenu()">
     <nav id="nav">
@@ -30,8 +30,9 @@
             </ul>
         </div> 
         <!-- Only displays when phone.css active -->
-        <div id="ham-menu" onclick=togglePhoneMenu()>
-            <img id="menu-icon" src="../Images/Menu.png" alt="Menu icon">
+        <div id="menu-btn">
+            <div class="menu-icon">
+            </div>
         </div>
         <div id="title">
             <a href="../index.html">
