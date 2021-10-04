@@ -132,15 +132,16 @@ $no-continue: no-continue; //Font stack
       width: 200px;
       padding: 20px 0 20px 0;
       img {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
+        transition: all .3s ease-in-out;
       }
     }
     .shape-card:hover {
       h3 {
         color: $black;
         text-shadow: 0 0 2px $neon-blue, 0 0 3px $neon-blue, 0 0 4px $neon-blue, 0 0 5px $neon-blue;
-        transition: all 0.3s;
+        transition: all .3s;
       }
     }
   }

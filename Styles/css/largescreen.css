@@ -182,15 +182,17 @@
 }
 
 #content-wrapper #shape-list .shape-card img {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #content-wrapper #shape-list .shape-card:hover h3 {
   color: #171717;
   text-shadow: 0 0 2px #66FCF1, 0 0 3px #66FCF1, 0 0 4px #66FCF1, 0 0 5px #66FCF1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 footer {

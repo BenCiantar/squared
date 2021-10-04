@@ -262,6 +262,18 @@ h4 {
           transform: scale(1);
 }
 
+#content-wrapper .shape-card.active img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#content-wrapper .shape-card.active h3 {
+  color: #171717;
+  text-shadow: 0 0 2px #66FCF1, 0 0 3px #66FCF1, 0 0 4px #66FCF1, 0 0 5px #66FCF1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 #content-wrapper h2 {
   text-align: center;
 }
