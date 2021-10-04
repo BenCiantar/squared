@@ -95,7 +95,8 @@
     "id": 11,
     "sides": 4,
     "cardImage": "../Images/shapes/rhombus.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "formula": "calculatorRhombus()",
+    "form": "<p class=\"label\">Diagonal A: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorRhombus()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorRhombus()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section><section class=\"inputContainer\"><p class=\"label\">Diagonal B: </p><input type=\"number\" id=\"n2\" value=\"0\" onchange=\"calculatorRhombus()\"/><select name=\"unit2\" id=\"unit2\" class=\"select\" onchange=\"calculatorRhombus()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
   },
   {
     "shapeName": "R. Triangle",
