@@ -26,7 +26,7 @@ function init () {
 function createShapeCard(shape) {
     document.getElementById("shape-list").innerHTML += `
                                 <div class="shape-card" id="shape-${shape.id}" onclick=shapeChange(${shape.id})>
-                                  <img src="${shape.cardImage}">
+                                  <img src="${shape.cardImage}" alt="A picture of a ${shape.fullShapeName}">
                                   <h3> ${shape.shapeName}</h3>  
                                 </div>
                                 `;
@@ -65,20 +65,6 @@ function populateCalculator (shapeId) {
                           </div>
                           `
 }
-
-
-//Phone Navigation Menu
-
-//Toggle phone menu display when clicking menu icon
-// function togglePhoneMenu() {
-//   const menu = document.getElementById("phone-menu");
-//   if (menu.style.display === "none") {
-//     menu.style.display = "block";
-//   } else {
-//     menu.style.display = "none";
-//   }
-// }
-
 
 //Hide phone menu and reset icon on screen resize
 function hidePhoneMenu(){
