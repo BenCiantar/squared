@@ -1,8 +1,4 @@
-$neon-blue: #66FCF1;
-$white: #EFEFEF; //Slighty offset white for OLED screens
-$black: #171717; //Slightly offset black for OLED screens
-$no-continue: no-continue, 'Gemunu Libre', sans-serif; //Header font plus fallbacks
-$gemunu-libre: 'Gemunu Libre', sans-serif; //Calculator font plus fallback
+@import 'variables', 'fonts';
 
 //General styling
 * {
@@ -164,6 +160,12 @@ h4 {
     justify-content: space-evenly;
     align-items: space-evenly;
     flex-wrap: wrap;
+    h1 {
+      font-family: $no-continue;
+      color: $neon-blue;
+      font-size: 40px;
+      margin: auto;
+    }
   }
   .shape-card {
     background-color: transparent;
@@ -171,6 +173,13 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.1;
+    transition: all 500ms;
+    transform: scale(0.7);
+    &.been-in-view{
+      opacity: 1;
+      transform: scale(1);
+    }
   }
   h2 {
     text-align: center;
@@ -304,7 +313,7 @@ footer {
   flex-direction: row;
   justify-content:space-between;
   align-items: center;
-  #copyright {
+  #filter {
     background-color: transparent;
     color: $neon-blue;
     height: 100%;
@@ -446,20 +455,18 @@ footer {
 
 
 
-//SVG Shape Styling
+//Animated Blob
 .blob {
   border-radius: 80%;
-  animation: morph 1.5s linear infinite;
+	animation: transform 5s linear infinite both alternate;
 }
 
-@keyframes morph {
-  0% {
-  border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
-  } 
-  50% {
-    border-radius:  40% 70% 80% 50% / 60% 70% 40% 60%;
-  }
-  100% {
-    border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
-  } 
+@keyframes transform {
+  0%,
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+   100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
 }
+

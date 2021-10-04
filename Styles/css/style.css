@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'no-continue';
+  src: url("../../Fonts/no-continue/WebKit/no_continue.eot");
+  /* IE9 Compat Modes */
+  src: url("../../Fonts/no-continue/WebKit/no_continue.eot?#iefix") format("embedded-opentype"), url("../../Fonts/no-continue/WebKit/no_continue.woff2") format("woff2"), url("../../Fonts/no-continue/WebKit/no_continue.woff") format("woff"), url("../../Fonts/no-continue/WebKit/no_continue.ttf") format("truetype"), url("../../Fonts/no-continue/WebKit/no_continue.svg#no_continue") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -216,6 +227,13 @@ h4 {
       flex-wrap: wrap;
 }
 
+#content-wrapper #shape-list h1 {
+  font-family: no-continue, "Gemunu Libre", sans-serif;
+  color: #66FCF1;
+  font-size: 40px;
+  margin: auto;
+}
+
 #content-wrapper .shape-card {
   background-color: transparent;
   display: -webkit-box;
@@ -231,6 +249,17 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+#content-wrapper .shape-card.been-in-view {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #content-wrapper h2 {
@@ -402,7 +431,7 @@ footer {
           align-items: center;
 }
 
-footer #copyright {
+footer #filter {
   background-color: transparent;
   color: #66FCF1;
   height: 100%;
@@ -610,31 +639,45 @@ footer #privacy {
 
 .blob {
   border-radius: 80%;
-  -webkit-animation: morph 1.5s linear infinite;
-          animation: morph 1.5s linear infinite;
+  -webkit-animation: transform 5s linear infinite both alternate;
+          animation: transform 5s linear infinite both alternate;
 }
 
-@-webkit-keyframes morph {
-  0% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+@-webkit-keyframes transform {
+  0%,
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
   }
-  50% {
-    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
   }
   100% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
   }
 }
 
-@keyframes morph {
-  0% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+@keyframes transform {
+  0%,
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
   }
-  50% {
-    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
   }
   100% {
-    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
