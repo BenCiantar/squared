@@ -1,7 +1,7 @@
 # squared
 Squared Online Shape Calculator - Hyper Island Project 1
 
-Brief: Solo prject to create a website that features HTML, CSS and Javascript, and is responsive.
+Brief: Solo project to create a website that features HTML, CSS and Javascript, and is responsive.
 
 Included features:  
 
