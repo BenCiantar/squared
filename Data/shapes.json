@@ -53,7 +53,7 @@
     "sides": 6,
     "cardImage": "../Images/shapes/hexagon.svg",
     "formula": "calculatorHexagon()",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorHexagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorHexagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
 
   },
   {
@@ -62,7 +62,8 @@
     "id": 7,
     "sides": 5,
     "cardImage": "../Images/shapes/pentagon.svg",
-    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorCircle()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorCircle()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
+    "formula": "calculatorPentagon()",
+    "form": "<p class=\"label\">Radius: </p><input type=\"number\" id=\"n1\" value=\"0\" onchange=\"calculatorPentagon()\"/><select name=\"unit1\" id=\"unit1\" class=\"select\" onchange=\"calculatorPentagon()\"><option value=\"mm\">mm</option><option value=\"cm\" selected=\"selected\">cm</option><option value=\"m\">m</option><option value=\"km\">km</option></select></section>"              
 
   },
   {

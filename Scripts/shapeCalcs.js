@@ -1,6 +1,12 @@
+//Calculate cotangents
+function ctg(x) { return 1 / Math.tan(x); }
 
-//Functions for calculating each type of shape
+//Assign pi to variable
+let pi = Math.PI;
 
+
+
+//Functions for calculating perimeter and area of each shape
 
 //SQUARE
 
@@ -145,8 +151,6 @@ function calculatorRectangle() {
 
 //CIRCLE
 function calculatorCircle() {  
-
-    let pi = Math.PI;
 
     let n1 = parseInt(document.getElementById('n1').value, 10);
     let num1 = n1;
@@ -376,3 +380,123 @@ function calculatorHexagon() {
     }
     return false; //Prevent the form from submitting if enter is pressed
 }
+
+
+//PENTAGON
+
+function calculatorPentagon() {  
+
+    let n1 = parseInt(document.getElementById('n1').value, 10);
+    let num1 = n1;
+
+    let unit1 = document.getElementById('unit1').value;
+
+    //Convert input 1 to mm
+    if (unit1 == "mm") {
+        n1 = n1;
+    } else if (unit1 == "cm") {
+        n1 = n1 * 10;
+    } else if (unit1 == "m") {
+        n1 = n1 * 1000;
+    } else if (unit1 == "km") {
+        n1 = n1 * 1000000;
+    }
+
+    let outUnit1 = document.getElementById('outUnit1').value;
+    if (n1 > 0) {
+        //Convert from mm to desired output unit
+        //Copy n1 into num 1 to avoid interfering with second output function
+        if (outUnit1 == "mm") {
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "cm") {
+            let num1 = n1 / 10;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "m") {
+            let num1 = n1 / 1000;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "km") {
+            let num1 = n1 / 1000000;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);    
+        }
+    }
+
+    let outUnit2 = document.getElementById('outUnit2').value;
+
+    if (n1 > 0) {
+        //Convert from mm to desired output unit
+        if (outUnit2 == "mm") {
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "cm") {
+            n1 = n1 / 10;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "m") {
+            n1 = n1 / 1000;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "km") {
+            n1 = n1 / 1000000;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        }
+    }
+    return false; //Prevent the form from submitting if enter is pressed
+}
+
+
+
+//PENTAGON
+
+function calculatorHeptagon() {  
+
+    let n1 = parseInt(document.getElementById('n1').value, 10);
+    let num1 = n1;
+
+    let unit1 = document.getElementById('unit1').value;
+
+    //Convert input 1 to mm
+    if (unit1 == "mm") {
+        n1 = n1;
+    } else if (unit1 == "cm") {
+        n1 = n1 * 10;
+    } else if (unit1 == "m") {
+        n1 = n1 * 1000;
+    } else if (unit1 == "km") {
+        n1 = n1 * 1000000;
+    }
+
+    let outUnit1 = document.getElementById('outUnit1').value;
+    if (n1 > 0) {
+        //Convert from mm to desired output unit
+        //Copy n1 into num 1 to avoid interfering with second output function
+        if (outUnit1 == "mm") {
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "cm") {
+            let num1 = n1 / 10;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "m") {
+            let num1 = n1 / 1000;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);
+        } else if (outUnit1 == "km") {
+            let num1 = n1 / 1000000;
+            document.getElementById('perimeter').innerHTML = (num1 * 5).toFixed(2);    
+        }
+    }
+
+    let outUnit2 = document.getElementById('outUnit2').value;
+
+    if (n1 > 0) {
+        //Convert from mm to desired output unit
+        if (outUnit2 == "mm") {
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "cm") {
+            n1 = n1 / 10;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "m") {
+            n1 = n1 / 1000;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        } else if (outUnit2 == "km") {
+            n1 = n1 / 1000000;
+            document.getElementById('area').innerHTML = ((1 / 4) * (Math.sqrt(5 * (5 + (2 * (Math.sqrt(5)))))) * (n1 * n1)).toFixed(2);
+        }
+    }
+    return false; //Prevent the form from submitting if enter is pressed
+}
+
