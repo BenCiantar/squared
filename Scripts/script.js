@@ -106,18 +106,11 @@ const morpheusOptions = {
   rotation: "none",
 }
 
-const arrayOfIcons = ["blob", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
+const arrayOfIcons = ["logo", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
 const myIcons = new SVGMorpheus("#iconSet", morpheusOptions);
 
 function changeIcon(id) {
   myIcons.to(arrayOfIcons[id]);
-
-  if (id == 0) {
-    document.getElementById("iconSet").classList.add("blob");
-  } else {
-    document.getElementById("iconSet").classList.remove("blob");
-  }
-
 }
 
 
