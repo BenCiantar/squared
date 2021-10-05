@@ -101,9 +101,9 @@ function shapeChange(id) {
 }
 
 const morpheusOptions = {
-  easing: "expo-in-out", //Fiddle with this
-  duration: 1000,
-  rotation: "none",
+  easing: "elastic-in-out",
+  duration: 1500,
+  rotation: "counter-clock",
 }
 
 const arrayOfIcons = ["logo", "square", "rectangle", "circle", "octagon", "eq-triangle", "hexagon", "pentagon", "heptagon", "nonagon", "parallelogram", "rhombus", "right-triangle", "scalene-triangle", "oval"];
