@@ -1,6 +1,5 @@
-squared
-
-Squared Online Shape Calculator - Hyper Island Project 1
+<h1 align="left">#squared</h1>
+<h3 align="left">Squared Online Shape Calculator - Hyper Island Project 1✨ </h3>
 
 Brief: Solo project to create a website that features HTML, CSS and Javascript, and is responsive.
 
@@ -28,9 +27,3 @@ Included features:
                   Main project hosted on Github
                   All styling done in SCSS
                   Followed basic SEO conventions
-
-
-                  TODO
-                  Fix blob animation
-                  Settle on transition type (ease-in-out etc.)
-                  Write presentation outline
