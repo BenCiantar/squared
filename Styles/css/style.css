@@ -519,7 +519,7 @@ footer #social-media ul {
 
 footer #social-media ul li a img {
   height: 25px;
-  width: 25px;
+  width: auto;
 }
 
 footer #social-media ul li a img:hover {
@@ -664,49 +664,5 @@ footer #privacy {
   font-size: 15px;
   color: #66FCF1;
   margin-top: 15px;
-}
-
-.blob {
-  border-radius: 80%;
-  -webkit-animation: transform 5s linear infinite both alternate;
-          animation: transform 5s linear infinite both alternate;
-}
-
-@-webkit-keyframes transform {
-  0%,
-  20% {
-    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
-  }
-  40% {
-    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
-  }
-  60% {
-    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
-  }
-  80% {
-    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
-  }
-  100% {
-    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
-  }
-}
-
-@keyframes transform {
-  0%,
-  20% {
-    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
-  }
-  40% {
-    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
-  }
-  60% {
-    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
-  }
-  80% {
-    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
-  }
-  100% {
-    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
-  }
 }
 /*# sourceMappingURL=style.css.map */
