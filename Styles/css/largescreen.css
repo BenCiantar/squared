@@ -139,6 +139,7 @@
   width: 60%;
   max-width: 140px;
   height: auto;
+  overflow: visible;
 }
 
 @media screen and (max-height: 450px) {

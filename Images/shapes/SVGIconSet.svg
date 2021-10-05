@@ -2,7 +2,7 @@
 <!-- <g id="SVGIconSet" clip-path="url(#clip0)"> -->
 <!-- <rect width="200" height="200" fill="white"/> -->
 
-<rect id="Blob" x="-1" width="200" height="200" rx="42" fill="#66FCF1"/>
+<path id="Logo" d="M45 71.3556V9H155V71.3556H110.185V44.2444H89.8148V64.5778L155 132.356V192H45V132.356H89.8148V155.4H110.185V132.356L45 71.3556Z" fill="#66FCF1"/>
 
 <rect id="Square" x="-1" width="200" height="200" fill="#66FCF1"/>
 
