@@ -34,8 +34,8 @@
 }
 
 body, html {
-  min-height: 100%;
   height: 100vh;
+  min-height: 100%;
 }
 
 body {
@@ -85,6 +85,9 @@ h4 {
 
 #nav {
   background-color: transparent;
+  width: 98vw;
+  margin: 0 1vw;
+  padding: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,15 +101,12 @@ h4 {
   -webkit-box-align: centre;
       -ms-flex-align: centre;
           align-items: centre;
-  width: 98vw;
-  margin: 0 1vw;
-  padding: 3px;
 }
 
 #nav #title {
   background-color: transparent;
-  padding: 2px;
-  padding-right: 1vw;
+  height: 100%;
+  padding: 2px 1vw 2px 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +120,6 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 #nav #title a {
@@ -144,8 +143,8 @@ h4 {
 
 #content-wrapper {
   background-color: transparent;
-  margin: 0vh 1vw;
   width: 98vw;
+  margin: 0vh 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,14 +232,15 @@ h4 {
 }
 
 #content-wrapper #shape-list h1 {
+  margin: auto;
   font-family: no-continue, "Gemunu Libre", sans-serif;
   color: #66FCF1;
   font-size: 40px;
-  margin: auto;
 }
 
 #content-wrapper .shape-card {
   background-color: transparent;
+  opacity: 0.1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +254,6 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.1;
   -webkit-transition: all 500ms;
   transition: all 500ms;
   -webkit-transform: scale(0.7);
@@ -334,18 +333,18 @@ form {
 }
 
 input {
+  background-color: #171717;
   height: auto;
   min-height: 30px;
   width: 35%;
   min-width: 30px;
+  margin: 0 2% 0 0;
+  padding: 2%;
   inline-size: 35%;
   word-break: break-all;
-  margin-right: 2%;
   font-family: "Gemunu Libre", sans-serif;
   font-size: 16px;
   text-align: right;
-  padding: 2%;
-  background-color: #171717;
   color: #EFEFEF;
   border: 1px;
   border-style: solid;
@@ -359,17 +358,17 @@ input:focus {
 }
 
 .output {
+  background-color: #171717;
   height: auto;
   min-height: 30px;
   width: 35%;
-  inline-size: 35%;
-  word-break: break-all;
-  font-family: "Gemunu Libre", sans-serif;
   min-width: 30px;
   margin-right: 2%;
-  text-align: right;
   padding: 2%;
-  background-color: #171717;
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: right;
+  inline-size: 35%;
+  word-break: break-all;
   color: #EFEFEF;
   border: 1px;
   border-style: solid;
@@ -392,13 +391,13 @@ input:focus {
 }
 
 .label {
+  height: 30px;
   width: 15%;
   min-width: 40px;
-  height: 30px;
+  margin-right: 8px;
   font-family: 'Gemunu Libre', sans-serif;
   color: #66FCF1;
   text-align: right;
-  margin-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,9 +461,9 @@ footer {
 
 footer #filter {
   background-color: transparent;
-  color: #66FCF1;
   height: 100%;
   width: 40%;
+  color: #66FCF1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,6 +499,7 @@ footer #social-media {
 footer #social-media ul {
   background-color: transparent;
   width: 100%;
+  margin-top: 3vh;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,7 +514,6 @@ footer #social-media ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3vh;
 }
 
 footer #social-media ul li a img {
@@ -554,6 +553,11 @@ footer #privacy {
   text-align: center;
   overflow: scroll;
   overflow-x: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #66FCF1;
+  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,11 +571,6 @@ footer #privacy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #66FCF1;
-  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
-          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
 }
 
 #content-calc h1 {
@@ -597,6 +596,11 @@ footer #privacy {
   padding: 20px 15vw 20px 15vw;
   text-align: center;
   overflow-x: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #66FCF1;
+  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,11 +614,6 @@ footer #privacy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #66FCF1;
-  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
-          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
 }
 
 #content-about p {
@@ -628,9 +627,9 @@ footer #privacy {
 }
 
 #content-about section img {
-  margin-top: 10px;
   height: 20vh;
   width: auto;
+  margin-top: 10px;
 }
 
 #content-privacy {
@@ -640,6 +639,11 @@ footer #privacy {
   margin: 1% 1% 1% 1%;
   padding: 20px 15vw 20px 15vw;
   overflow-x: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #66FCF1;
+  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,16 +657,11 @@ footer #privacy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #66FCF1;
-  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
-          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
 }
 
 #content-privacy h4 {
+  margin-top: 15px;
   font-size: 15px;
   color: #66FCF1;
-  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
