@@ -1,31 +1,24 @@
 // Styling for devices with 601px+ screen width
-$neon-blue: #66FCF1;
-$white: #EFEFEF; //Slighty offset white for OLED screens
-$black: #171717; //Slightly offset black for OLED screens
-$no-continue: no-continue; //Font stack
-
-
 
 // Header
 #nav {
   height: 13vh;
   #reg-menu {
-    background-color: transparent;
+    height: 100%;
+    width: 60vw;
     padding: 2px 2px 2px 1vw;
     overflow: visible;
     display: flex;
     flex-direction: row;
     justify-content: flext-start;
     align-items: center;
-    width: 60vw;
-    height: 100%;
     ul {
+      padding-left: 5px;
+      list-style-type: none;
       display: flex;
       flex-direction: row;
       justify-content: flext-start;
       align-items: center;
-      list-style-type: none;
-      padding-left: 5px;
       li {
         margin-right: 2vw;
       }
@@ -59,8 +52,8 @@ $no-continue: no-continue; //Font stack
     }
   }
   #title {
-    overflow: show;
     width: 38vw;
+    overflow: show;
     a {
       height: 100%;
       display: flex;
@@ -81,7 +74,6 @@ $no-continue: no-continue; //Font stack
 }
 
 
-
 // Content
 #content-wrapper {
   height: 75vh;
@@ -100,9 +92,9 @@ $no-continue: no-continue; //Font stack
       width: 29vw;
       padding: 6vh 0 0 12px;
       svg {
+        height: auto;
         width: 60%;
         max-width: 140px;
-        height: auto;
         overflow: visible;
       }
     }
@@ -110,8 +102,8 @@ $no-continue: no-continue; //Font stack
       #main-shape {
         min-height: 100px;
         img {
-          max-width: 100px;
           width: 30%;
+          max-width: 100px;
         }
       }
     }
@@ -126,8 +118,8 @@ $no-continue: no-continue; //Font stack
   }
   #shape-list {
     height: 73vh;
-    margin: 1vh 1vw 1vh 0;
     width: 66vw;
+    margin: 1vh 1vw 1vh 0;
     .shape-card {
       height: 200px;
       width: 200px;

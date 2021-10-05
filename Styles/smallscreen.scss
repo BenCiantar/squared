@@ -1,13 +1,6 @@
 //Styles for devices with up to 600px screen width
-$neon-blue: #66FCF1;
-$white: #EFEFEF; //Slighty offset white for OLED screens
-$black: #171717; //Slightly offset black for OLED screens
-$no-continue: no-continue; //Font stack
-
-
 
 // Header
-
 #nav {
   height: 10vh;
   #reg-menu {
@@ -15,29 +8,28 @@ $no-continue: no-continue; //Font stack
   }
   #menu-btn {
     background-color: transparent;
+    height: 100%;
+    width: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 100%;
-    cursor: pointer;
     transition: all .5s ease-in-out;
     .menu-icon {
-      width: 40px;
+      background-color: $neon-blue;
       height: 5px;
-      background: $neon-blue;
+      width: 40px;
       border-radius: 5px;
       transition: all .5s ease-in-out;
     }
     .menu-icon::before,
     .menu-icon::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 5px;
       background: $neon-blue;
+      content: "";
+      height: 5px;
+      width: 40px;
       border-radius: 5px;
+      position: absolute;
       transition: all .5s ease-in-out;
     }
     .menu-icon::before {
@@ -47,8 +39,8 @@ $no-continue: no-continue; //Font stack
       transform: translateY(12px);
     }
     .menu-icon.open {
-      transform: opacity(0);
       background: transparent;
+      transform: opacity(0);
     }
     .menu-icon.open::before {
       transform: rotate(45deg);
@@ -58,9 +50,9 @@ $no-continue: no-continue; //Font stack
     }
   }
   #title {
+    width: 64vw;
     overflow: hidden;
     text-align: right;
-    width: 64vw;
     a {
       width: 80%;
     }
@@ -71,29 +63,29 @@ $no-continue: no-continue; //Font stack
 }
 
 #phone-menu {
-  transform: translateX(-800px); //Default setting on page load
-  transition: all .5s ease-in-out;
-  position: absolute;
+  background-color: black;
   height: 79vh;
   width: 98vw;
-  background-color: black;
   margin: 0 1vw 1vh 1vw;
   z-index: 2;
   border-width: 2px;
   border-style: solid;
   border-color: $neon-blue;
   box-shadow:  inset 0 0 10px $neon-blue, 0 0 10px $neon-blue;
+  position: absolute;
+  transform: translateX(-800px); //Default setting on page load
+  transition: all .5s ease-in-out;
   ul {
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
     li {
+      height: 20vh;
       color: $neon-blue;
       font-family: $no-continue;
-      height: 20vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -112,6 +104,7 @@ $no-continue: no-continue; //Font stack
     }
   }
 }
+
 
 // Content
 #content-wrapper {
@@ -143,8 +136,8 @@ $no-continue: no-continue; //Font stack
   }
   #shape-list {
     height: 39vh;
-    margin: 0 0 1vh 0;
     width: 96vw;
+    margin: 0 0 1vh 0;
   }
   .shape-card {
     height: 100px;
@@ -159,6 +152,7 @@ $no-continue: no-continue; //Font stack
     }
   }
 }
+
 
 //Footer
 footer {
