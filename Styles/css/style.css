@@ -519,7 +519,7 @@ footer #social-media ul {
 
 footer #social-media ul li a img {
   height: 25px;
-  width: 25px;
+  width: auto;
 }
 
 footer #social-media ul li a img:hover {

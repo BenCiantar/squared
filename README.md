@@ -31,7 +31,6 @@ Included features:
 
 
                   TODO
-                  Replace Insta and Twitter with Github and LinkedIn
                   Fix blob animation
                   Settle on transition type (ease-in-out etc.)
                   Write presentation outline

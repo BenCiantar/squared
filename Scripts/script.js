@@ -77,7 +77,6 @@ function hidePhoneMenu(){
 const menuBtn = document.getElementById("menu-btn");
 const menuIcon = document.querySelector(".menu-icon");
 const menu = document.getElementById("phone-menu");
-// let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
   if(!menuIcon.classList.contains('open')) {
