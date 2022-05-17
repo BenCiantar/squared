@@ -1,10 +1,10 @@
 
 <h1>#squared</h1>
-<h3>Squared Online Shape Calculator - Hyper Island Project 1</h3>
+<h3>Squared Online Shape Calculator</h3>
 
-Brief: Solo project to create a website that features HTML, CSS and Javascript, and is responsive.
+Brief: My first Hyper Island project, an individual build that features HTML, CSS and Javascript, and is responsive.
 
-Timeframe: six weeks.
+Timeframe: Six weeks.
 
 Description: Squared is an online tool that allows the user to select a shape and input the required value (usually the length of one or two sides, depending on the shape). The tool will then calculate the area and perimeter of the shape, converting between mm, cm, m, and km depending on user selection.
 
