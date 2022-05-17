@@ -1,166 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta name="description" content="Calculate the area and perimeter for a huge variety of shapes online.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta
+      name="description"
+      content="Calculate the area and perimeter for a huge variety of shapes online."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Squared | Online Shape Calculator</title>
-    <link rel="stylesheet" href="./Styles/css/style.css">
-    <link rel="stylesheet" media='screen and (max-width: 600px)' href="./Styles/css/smallscreen.css">
-    <link rel="stylesheet" media='screen and (min-width: 600px)' href="./Styles/css/largescreen.css">
- </head>
- <body onload="init()" onresize="hidePhoneMenu()">
-    <nav id="nav">
+    <link rel="stylesheet" href="./Styles/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px)"
+      href="./Styles/css/smallscreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 600px)"
+      href="./Styles/css/largescreen.css"
+    />
+  </head>
+  <body onload="init()" onresize="hidePhoneMenu()">
+    <header>
+      <nav id="nav">
         <!-- Only displays when largescreen.css active -->
-        <nav id="reg-menu">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./Pages/about.html">About</a>
-                </li>
-                <li>
-                    <a href="./Pages/calculators.html">Calculators</a>
-                </li>
-                <li>
-                    <a href="https://www.patreon.com/" target="_blank">Donate</a>
-                </li>
-            </ul>
-        </nav> 
+        <menu id="reg-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="./Pages/about.html">About</a>
+            </li>
+            <li>
+              <a href="./Pages/calculators.html">Calculators</a>
+            </li>
+            <li>
+              <a href="https://www.patreon.com/" target="_blank">Donate</a>
+            </li>
+          </ul>
+        </menu>
         <!-- Only displays when smallscreen.css active -->
         <div id="menu-btn">
-            <div class="menu-icon">
-            </div>
+          <div class="menu-icon"></div>
         </div>
         <div id="title">
-            <a href="index.html">
-                <h1>
-                    SQUARED
-                </h1>
-            </a>
+          <a href="index.html">
+            <h1>SQUARED</h1>
+          </a>
         </div>
-    </nav>
-    <nav id="phone-menu">
+      </nav>
+      <menu id="phone-menu">
         <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="./Pages/about.html">About</a>
-            </li>
-            <li>
-                <a href="./Pages/calculators.html">Calculators</a>
-            </li>
-            <li>
-                <a href="https://www.patreon.com/" target="_blank">Donate</a>
-            </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="./Pages/about.html">About</a>
+          </li>
+          <li>
+            <a href="./Pages/calculators.html">Calculators</a>
+          </li>
+          <li>
+            <a href="https://www.patreon.com/" target="_blank">Donate</a>
+          </li>
         </ul>
-    </nav>  
+      </menu>
+    </header>
     <main>
-        <div id="content-wrapper">
-            <section id="calc-area">
-                <div id="main-shape">
-                    <svg id="iconSet" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div id="content-wrapper">
+        <section id="calc-area">
+          <div id="main-shape">
+            <svg
+              id="iconSet"
+              width="200"
+              height="200"
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="square">
+                <rect
+                  id="Square"
+                  x="-1"
+                  width="200"
+                  height="200"
+                  fill="#66FCF1"
+                />
+              </g>
 
-                        <g id="square">
-                            <rect id="Square" x="-1" width="200" height="200" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="rectangle">
-                            <rect id="Rectangle" x="-1" y="33" width="200" height="135" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="circle">
-                            <circle id="Circle" cx="99" cy="100" r="100" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="octagon">
-                            <path id="Octagon" d="M140.421 200H57.5786L-1 141.421V58.5786L57.5786 0H140.421L199 58.5786V141.421L140.421 200Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="eq-triangle">
-                            <path id="Eq. Triangle" d="M99 -1L185.603 149H12.3975L99 -1Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="hexagon">
-                            <path id="Hexagon" d="M198.995 99.4975L149.246 188.945H49.7487L0 99.4975L49.7487 10.0502H149.246L198.995 99.4975Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="pentagon">
-                            <path id="Pentagon" d="M44.5899 187.94L11 79.2404L98.9399 12.0603L186.879 79.2404L153.29 187.94H44.5899Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="heptagon">
-                            <path id="Heptagon" d="M140.338 192.965H57.5916L6 126.607L24.4128 43.8608L98.9648 7.03517L173.517 43.8608L191.93 126.607L140.338 192.965Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="nonagon">
-                            <path id="Nonagon" d="M131.251 192.965H66.6785L17.2129 150.818L6 86.2453L38.2863 29.461L98.9648 7.03517L159.643 29.461L191.93 86.2453L180.717 150.818L131.251 192.965Z" fill="#66FCF1"/>
-                        </g>
+              <g id="rectangle">
+                <rect
+                  id="Rectangle"
+                  x="-1"
+                  y="33"
+                  width="200"
+                  height="135"
+                  fill="#66FCF1"
+                />
+              </g>
 
-                        <g id="parallelogram">
-                            <path id="Parallelogram" d="M50.6152 57.2864H196.98L147.365 142.714H1L50.6152 57.2864Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="rhombus">
-                            <path id="Rhombus" d="M49 99.4977L99.2513 14.0704L149.503 99.4977L99.2513 184.925L49 99.4977Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="scalene-triangle">
-                            <path id="Scalene Triangle" d="M-1 36L199 165H27.5714L-1 36Z" fill="#66FCF1"/>
-                        </g>
+              <g id="circle">
+                <circle id="Circle" cx="99" cy="100" r="100" fill="#66FCF1" />
+              </g>
 
-                        <g id="right-triangle">
-                            <path id="Right Triangle" d="M6 191V2L192 191H6Z" fill="#66FCF1"/>
-                        </g>
-                    
-                        <g id="oval">
-                            <ellipse id="Oval" cx="99" cy="100" rx="99" ry="68" fill="#66FCF1"/>
-                        </g>
+              <g id="octagon">
+                <path
+                  id="Octagon"
+                  d="M140.421 200H57.5786L-1 141.421V58.5786L57.5786 0H140.421L199 58.5786V141.421L140.421 200Z"
+                  fill="#66FCF1"
+                />
+              </g>
 
-                        <g id="logo">
-                            <path id="Logo" d="M45 71.3556V9H155V71.3556H110.185V44.2444H89.8148V64.5778L155 132.356V192H45V132.356H89.8148V155.4H110.185V132.356L45 71.3556Z" fill="#66FCF1"/>
-                        </g>
+              <g id="eq-triangle">
+                <path
+                  id="Eq. Triangle"
+                  d="M99 -1L185.603 149H12.3975L99 -1Z"
+                  fill="#66FCF1"
+                />
+              </g>
 
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="200" height="200" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>                 
-                </div>
-                <div id="form-area">
-                    <h2>Choose a shape to begin!</h2>
-                </div>
-            </section>
-            <section id="shape-list">
-            </section>
-        </div>
+              <g id="hexagon">
+                <path
+                  id="Hexagon"
+                  d="M198.995 99.4975L149.246 188.945H49.7487L0 99.4975L49.7487 10.0502H149.246L198.995 99.4975Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="pentagon">
+                <path
+                  id="Pentagon"
+                  d="M44.5899 187.94L11 79.2404L98.9399 12.0603L186.879 79.2404L153.29 187.94H44.5899Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="heptagon">
+                <path
+                  id="Heptagon"
+                  d="M140.338 192.965H57.5916L6 126.607L24.4128 43.8608L98.9648 7.03517L173.517 43.8608L191.93 126.607L140.338 192.965Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="nonagon">
+                <path
+                  id="Nonagon"
+                  d="M131.251 192.965H66.6785L17.2129 150.818L6 86.2453L38.2863 29.461L98.9648 7.03517L159.643 29.461L191.93 86.2453L180.717 150.818L131.251 192.965Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="parallelogram">
+                <path
+                  id="Parallelogram"
+                  d="M50.6152 57.2864H196.98L147.365 142.714H1L50.6152 57.2864Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="rhombus">
+                <path
+                  id="Rhombus"
+                  d="M49 99.4977L99.2513 14.0704L149.503 99.4977L99.2513 184.925L49 99.4977Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="scalene-triangle">
+                <path
+                  id="Scalene Triangle"
+                  d="M-1 36L199 165H27.5714L-1 36Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="right-triangle">
+                <path
+                  id="Right Triangle"
+                  d="M6 191V2L192 191H6Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="oval">
+                <ellipse
+                  id="Oval"
+                  cx="99"
+                  cy="100"
+                  rx="99"
+                  ry="68"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <g id="logo">
+                <path
+                  id="Logo"
+                  d="M45 71.3556V9H155V71.3556H110.185V44.2444H89.8148V64.5778L155 132.356V192H45V132.356H89.8148V155.4H110.185V132.356L45 71.3556Z"
+                  fill="#66FCF1"
+                />
+              </g>
+
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="200" height="200" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div id="form-area">
+            <h2>Choose a shape to begin!</h2>
+          </div>
+        </section>
+        <section id="shape-list"></section>
+      </div>
     </main>
     <footer>
-    <div id="filter">
-    </div>
-    <div id="social-media">
+      <section id="filter"></section>
+      <menu id="social-media">
         <ul>
-            <li class="social-icon">
-                <a href="https://www.facebook.com/benbens155"><img src="./Images/Facebook Logo.png" alt="Facebook logo"></a>
-            </li>
-            <li class="social-icon">
-                <a href="https://www.linkedin.com/in/benjamin-ciantar-22089b21b/"><img src="./Images/LinkedIn Logo.png" alt="Instagram logo"></a>
-            </li>
-            <li class="social-icon">
-                <a href="https://github.com/BenCiantar/BenCiantar"><img src="./Images/Github Logo.png" alt="Twitter logo"></a>
-            </li>
+          <li class="social-icon">
+            <a href="https://www.facebook.com/benbens155"
+              ><img src="./Images/Facebook Logo.png" alt="Facebook logo"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.linkedin.com/in/benjamin-ciantar-22089b21b/"
+              ><img src="./Images/LinkedIn Logo.png" alt="Instagram logo"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="https://github.com/BenCiantar/BenCiantar"
+              ><img src="./Images/Github Logo.png" alt="Twitter logo"
+            /></a>
+          </li>
         </ul>
-    </div>
-    <div id="privacy">
-        <a href="./Pages/privacy.html" alt="privacy"><p>Privacy Policy & Cookies</p></a>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js"></script>
-  <script src="../Scripts/script.js"></script>  
-  <script src="../Scripts/shapeCalcs.js"></script>
- </body>
+      </menu>
+      <section id="privacy">
+        <a href="./Pages/privacy.html" alt="privacy"
+          ><p>Privacy Policy & Cookies</p></a
+        >
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js"></script>
+    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/shapeCalcs.js"></script>
+  </body>
 </html>
