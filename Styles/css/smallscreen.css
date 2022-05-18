@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'no-continue';
+  src: url("../../Fonts/no-continue/WebKit/no_continue.eot");
+  /* IE9 Compat Modes */
+  src: url("../../Fonts/no-continue/WebKit/no_continue.eot?#iefix") format("embedded-opentype"), url("../../Fonts/no-continue/WebKit/no_continue.woff2") format("woff2"), url("../../Fonts/no-continue/WebKit/no_continue.woff") format("woff"), url("../../Fonts/no-continue/WebKit/no_continue.ttf") format("truetype"), url("../../Fonts/no-continue/WebKit/no_continue.svg#no_continue") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
 #nav {
   height: 10vh;
 }
@@ -8,77 +19,59 @@
 
 #nav #menu-btn {
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80px;
   height: 100%;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   transition: all .5s ease-in-out;
 }
 
 #nav #menu-btn .menu-icon {
-  width: 40px;
+  background-color: #66FCF1;
   height: 5px;
-  background: #66FCF1;
+  width: 40px;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 #nav #menu-btn .menu-icon::before,
 #nav #menu-btn .menu-icon::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 5px;
   background: #66FCF1;
+  content: "";
+  height: 5px;
+  width: 40px;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
+  position: absolute;
   transition: all .5s ease-in-out;
 }
 
 #nav #menu-btn .menu-icon::before {
-  -webkit-transform: translateY(-12px);
-          transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 #nav #menu-btn .menu-icon::after {
-  -webkit-transform: translateY(12px);
-          transform: translateY(12px);
+  transform: translateY(12px);
 }
 
 #nav #menu-btn .menu-icon.open {
-  -webkit-transform: opacity(0);
-          transform: opacity(0);
   background: transparent;
+  transform: opacity(0);
 }
 
 #nav #menu-btn .menu-icon.open::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #nav #menu-btn .menu-icon.open::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 #nav #title {
+  width: 64vw;
   overflow: hidden;
   text-align: right;
-  width: 64vw;
 }
 
 #nav #title a {
@@ -90,65 +83,44 @@
 }
 
 #phone-menu {
-  -webkit-transform: translateX(-800px);
-          transform: translateX(-800px);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  position: absolute;
+  background-color: black;
   height: 79vh;
   width: 98vw;
-  background-color: black;
   margin: 0 1vw 1vh 1vw;
   z-index: 2;
   border-width: 2px;
   border-style: solid;
   border-color: #66FCF1;
-  -webkit-box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
-          box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+  box-shadow: inset 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+  position: absolute;
+  transform: translateX(-800px);
+  transition: all .5s ease-in-out;
 }
 
 #phone-menu ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #phone-menu ul li {
-  color: #66FCF1;
-  font-family: no-continue;
   height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: #66FCF1;
+  font-family: no-continue, "Gemunu Libre", sans-serif;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #phone-menu ul li a {
   color: #66FCF1;
   font-size: 19px;
   text-decoration: none;
-  font-family: no-continue;
+  font-family: no-continue, "Gemunu Libre", sans-serif;
 }
 
 #phone-menu ul li a:visited {
@@ -159,14 +131,11 @@
 
 #content-wrapper {
   height: 79vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #content-wrapper #calc-area {
-  height: 37vh;
+  height: 51vh;
   width: 96vw;
   margin: 1vh 0 0 0;
 }
@@ -188,25 +157,16 @@
 #content-wrapper #calc-area #form-area {
   height: 20vh;
   width: 96vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #content-wrapper #shape-list {
-  height: 39vh;
-  margin: 0 0 1vh 0;
+  height: 25vh;
   width: 96vw;
+  margin: 0 0 1vh 0;
 }
 
 #content-wrapper .shape-card {

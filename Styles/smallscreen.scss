@@ -1,5 +1,7 @@
 //Styles for devices with up to 600px screen width
 
+@import 'variables', 'fonts';
+
 // Header
 #nav {
   height: 10vh;
@@ -111,7 +113,7 @@
   height: 79vh;
   flex-direction: column;
   #calc-area {
-    height: 37vh;
+    height: 51vh;
     width: 96vw;
     margin: 1vh 0 0 0;
     h2 {
@@ -135,7 +137,7 @@
     }
   }
   #shape-list {
-    height: 39vh;
+    height: 25vh;
     width: 96vw;
     margin: 0 0 1vh 0;
   }
@@ -152,7 +154,6 @@
     }
   }
 }
-
 
 //Footer
 footer {
